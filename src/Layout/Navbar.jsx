@@ -46,7 +46,7 @@ export default function Navbar() {
                 SPONSORS
                 </div>
                 <div className="title  text-base font-medium hover:text-yellow duration-300 text-white px-10 tracking-wider cursor-pointer">
-                  Contact Us
+                  CONTACT US
                 </div>
                 <div>
                   

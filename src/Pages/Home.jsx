@@ -158,18 +158,27 @@ function Home() {
                       <div className=" title text-base font-medium hover:text-yellow duration-300 text-white pr-10 tracking-wider cursor-pointer">
                         HOME
                       </div>
+                      <a href="#event-info">
                       <div className="title center text-base font-medium hover:text-yellow duration-300 text-white px-10 tracking-wider cursor-pointer">
                         EVENT INFO
                       </div>
+                      </a>
+                      <a href="#speaker">
                       <div className="title  text-base font-medium hover:text-yellow duration-300 text-white px-10 tracking-wider cursor-pointer">
                         SPEAKER
                       </div>
+                      </a>
+                      <a href="#sponsors">
                       <div className=" title text-base font-medium hover:text-yellow duration-300 text-white px-10 tracking-wider cursor-pointer">
                         SPONSORS
                       </div>
+                      </a>
+                      <a href="#contact-us">
                       <div className="title  text-base font-medium hover:text-yellow duration-300 text-white px-10 tracking-wider cursor-pointer">
-                        Contact Us
+                       CONTACT US
                       </div>
+                      </a>
+                     
                       <div></div>
                     </div>
                   </div>
@@ -241,7 +250,7 @@ function Home() {
         </div>
       </section>
 
-      <section className=" container mx-auto">
+      <section id="event-info" className=" container mx-auto">
         <div className=" py-16 ">
           <h1 className=" font-semibold text-yellow text-h1 pb-4">
             EVENT INFO
@@ -316,8 +325,8 @@ function Home() {
         </div>
       </section>
 
-      <section>
-        <div className=" py-16 ">
+      <section id="speaker"> 
+        <div className=" py-16  pb-0">
           <h1 className=" font-semibold text-yellow text-h1 pb-4">SPEAKERS</h1>
           <div className="py-10">
 
@@ -327,7 +336,7 @@ function Home() {
 
         {/* <img src={SVG}/> */}
       </section>
-      <section>
+      <section id="">
         <div className=" py-10 pb-8">
           <h1 className=" font-semibold text-yellow text-h1">
             Frequently Asked Questions

@@ -9,7 +9,7 @@ function Footer() {
   return (
     <div>
       <div className=" bg-[#e6e6e6] py-10">
-        <div className=" container mx-auto">
+        <div id="sponsors" className=" container mx-auto">
             <div className=" pt-10 pb-8">
             <div className=" font-semibold text-[#6d6d6d] text-h3 ">SPONSORS</div>
             <div className=" grid grid-cols-12 py-10">
@@ -26,7 +26,7 @@ function Footer() {
             </div>
             </div>
        
-          <div className=" grid grid-cols-12">
+          <div id="contact-us" className=" grid grid-cols-12 gap-10">
             <div className=" col-span-5">
               <h3 className=" text-h3 text-primary font-semibold text-left">
                 Confederation of Indian Industry Coimbatore

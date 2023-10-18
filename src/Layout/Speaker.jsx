@@ -50,13 +50,28 @@ export default function Speaker() {
         modules={[FreeMode, Pagination]}
         className="mySwiper"
       >
-        <SwiperSlide>
+             <SwiperSlide>
           <div className="group">
             <div className=" relative ">
-              <img src={Abhilash} />
+              <img src={Senthil} />
             </div>
             <div className="bg-[#e6e6e6] group-hover:bg-primary duration-300 py-4">
               <div className=" text-center text-h4  text-primary group-hover:text-white font-semibold">
+                Dr K Senthil Ganesh
+              </div>
+              <div className=" text-center text-yellow  px-5 text-h5 font-semibold">
+                Chairman, CII Coimbatore Zone & CEO, Transform Tech (I) Pvt Ltd
+              </div>
+            </div>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide className="h-full">
+          <div className="group h-full">
+            <div className=" relative h-full ">
+              <img src={Abhilash} />
+            </div>
+            <div className="bg-[#e6e6e6] h-full group-hover:bg-primary duration-300 py-4">
+              <div className=" text-center text-h4  h-full text-primary group-hover:text-white font-semibold">
                 Mr Abhilash Misra
               </div>
               <div className=" text-center text-yellow  text-h5 font-semibold">
@@ -104,29 +119,18 @@ export default function Speaker() {
             </div>
             <div className="bg-[#e6e6e6] group-hover:bg-primary duration-300 py-4">
               <div className=" text-center text-h4  text-primary group-hover:text-white font-semibold">
-                Mr Abhilash Misra
+              Ms S Malarvizhi
               </div>
-              <div className=" text-center text-yellow  text-h5 font-semibold">
-                CEO ,NSE Academy
-              </div>
-            </div>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="group">
-            <div className=" relative ">
-              <img src={Senthil} />
-            </div>
-            <div className="bg-[#e6e6e6] group-hover:bg-primary duration-300 py-4">
-              <div className=" text-center text-h4  text-primary group-hover:text-white font-semibold">
-                Dr K Senthil Ganesh
-              </div>
-              <div className=" text-center text-yellow  px-5 text-h5 font-semibold">
-                Chairman, CII Coimbatore Zone & CEO, Transform Tech (I) Pvt Ltd
+              <div className=" text-center px-5 text-yellow  text-h5 font-semibold">
+              Co-Chairperson, National Higher
+Education Conclave 2023 &
+Managing Trustee, Sri Krishna Institutions
+
               </div>
             </div>
           </div>
         </SwiperSlide>
+   
         <SwiperSlide>
           <div className="group">
             <div className=" relative ">
@@ -134,10 +138,12 @@ export default function Speaker() {
             </div>
             <div className="bg-[#e6e6e6] group-hover:bg-primary duration-300 py-4">
               <div className=" text-center text-h4  text-primary group-hover:text-white font-semibold">
-                Dr K Senthil Ganesh
+              Dr Christopher Abraham
               </div>
               <div className=" text-center text-yellow px-5  text-h5 font-semibold">
-                Chairman, CII Coimbatore Zone & CEO, Transform Tech (I) Pvt Ltd
+              CEO & Head - Dubai Campus
+S P Jain School of Global Management
+
               </div>
             </div>
           </div>
@@ -149,10 +155,12 @@ export default function Speaker() {
             </div>
             <div className="bg-[#e6e6e6] group-hover:bg-primary duration-300 py-4">
               <div className=" text-center text-h4  text-primary group-hover:text-white font-semibold">
-                Mr Abhilash Misra
+              Mr Dulles Krishnan
               </div>
               <div className=" text-center text-yellow  text-h5 font-semibold">
-                CEO ,NSE Academy
+              Managing Director - Enterprise
+Coursera India
+
               </div>
             </div>
           </div>
@@ -164,10 +172,12 @@ export default function Speaker() {
             </div>
             <div className="bg-[#e6e6e6] group-hover:bg-primary duration-300 py-4">
               <div className=" text-center text-h4  text-primary group-hover:text-white font-semibold">
-                Mr Abhilash Misra
+              Dr Gururaj H Kidiyoor
               </div>
               <div className=" text-center text-yellow  text-h5 font-semibold">
-                CEO ,NSE Academy
+              Director
+NITTE Institutions
+
               </div>
             </div>
           </div>
@@ -179,10 +189,14 @@ export default function Speaker() {
             </div>
             <div className="bg-[#e6e6e6] group-hover:bg-primary duration-300 py-4">
               <div className=" text-center text-h4  text-primary group-hover:text-white font-semibold">
-                Mr Abhilash Misra
+           
+Ms Vasanthi Srinivasan
+
               </div>
               <div className=" text-center text-yellow  text-h5 font-semibold">
-                CEO ,NSE Academy
+              Professor
+IIM Bangalore
+
               </div>
             </div>
           </div>
@@ -194,10 +208,12 @@ export default function Speaker() {
             </div>
             <div className="bg-[#e6e6e6] group-hover:bg-primary duration-300 py-4">
               <div className=" text-center text-h4  text-primary group-hover:text-white font-semibold">
-                Mr Abhilash Misra
+              Dr S Senthilnathan
               </div>
               <div className=" text-center text-yellow  text-h5 font-semibold">
-                CEO ,NSE Academy
+              Professor
+Educational Technology, Bharathidasan University
+
               </div>
             </div>
           </div>
@@ -209,10 +225,12 @@ export default function Speaker() {
             </div>
             <div className="bg-[#e6e6e6] group-hover:bg-primary duration-300 py-4">
               <div className=" text-center text-h4  text-primary group-hover:text-white font-semibold">
-                Mr Abhilash Misra
+              Ms Hemamalini S
               </div>
               <div className=" text-center text-yellow  text-h5 font-semibold">
-                CEO ,NSE Academy
+              Director - Planning and Operations,
+Numentica Technologies Ltd
+
               </div>
             </div>
           </div>
