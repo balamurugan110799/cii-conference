@@ -29,6 +29,16 @@
 .shadow{
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
+.child{
+    filter: grayscale(100%);
+}
+.swiper-pagination{
+    position: relative!important;
+    margin: 20px 0px 0px 0px;
+}
+.swiper-pagination-bullet-active{
+    background-color: #909090!important;
+}
 
 
 
