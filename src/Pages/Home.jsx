@@ -9,7 +9,7 @@ import SVG from "../Layout/SVG";
 import Abhilash from "../Components/Asset/Image/Speakers/Abhilash Misra.png";
 import Nandini from "../Components/Asset/Image/Speakers/Dr R Nandini.png";
 import Shankar from "../Components/Asset/Image/Speakers/Mr Shankar Vanavarayar.png";
-
+import Speaker from "../Layout/Speaker";
 
 // import {SVG} from "../Components/SVG/rrreplicate.svg"
 
@@ -319,24 +319,9 @@ function Home() {
       <section>
         <div className=" py-16 ">
           <h1 className=" font-semibold text-yellow text-h1 pb-4">SPEAKERS</h1>
-          <div className=" container mx-auto">
-            <div className=" grid grid-cols-12 gap-10">
-              <div className=" col-span-3 ">
-                <div>
-                  
-                </div>
-                <img src={Abhilash} />
-                <div className="">
+          <div className="py-10">
 
-                </div>
-              </div>
-              <div className=" col-span-3">
-                <img src={Nandini} />
-              </div>
-              <div className=" col-span-3">
-                <img src={Shankar} />
-              </div>
-            </div>
+          <Speaker/>
           </div>
         </div>
 
