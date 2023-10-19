@@ -10,6 +10,9 @@ import Abhilash from "../Components/Asset/Image/Speakers/Abhilash Misra.png";
 import Nandini from "../Components/Asset/Image/Speakers/Dr R Nandini.png";
 import Shankar from "../Components/Asset/Image/Speakers/Mr Shankar Vanavarayar.png";
 import Speaker from "../Layout/Speaker";
+import PreviousEditions from "../Layout/Previous-Editions";
+import ConclaveSession from "../Layout/ConclaveSession";
+import Expect from "../Layout/Expect";
 
 // import {SVG} from "../Components/SVG/rrreplicate.svg"
 
@@ -221,7 +224,7 @@ function Home() {
                           November 2nd, 2023
                         </p>
                         <p className=" text-h4 text-secondary text-left">
-                          9.30 a.m. to 6.00 p.m
+                          9.30 a.m to 6.00 p.m
                         </p>
                       </div>
                     </div>
@@ -236,6 +239,10 @@ function Home() {
                         <span class="line -bottom"></span>
                       </a>
                     </section> */}
+
+                    <div className=" text-yellow text-left">
+                    *fee applicable
+                    </div>
 
                     <div className="py-2 my-2 px-10 mx-auto text-h2 shadow  bg-primary hover:bg-yellow cursor-pointer duration-300 rounded-lg font-semibold title tracking-wider text-white">
                       Register now!
@@ -325,8 +332,44 @@ function Home() {
         </div>
       </section>
 
+      
+      <section className=" ">
+        <div className="pt-0 py-16">
+                      <div className=" pt-6">
+                      <h1 className=" font-semibold text-yellow text-h1 pb-10">CONCLAVE SESSION</h1>
+
+        <ConclaveSession/>
+                      </div>
+        </div>
+      </section>
+
+      <section className="pb-10 ">
+        <div className="pt-0 py-16">
+                      <div className=" ">
+                      {/* <h1 className=" font-semibold text-yellow text-h1 pb-10">PREVIOUS EDITIONS</h1> */}
+
+        <Expect/>
+                      </div>
+        </div>
+      </section>
+
+      <section className=" bg-yellow">
+        <div className="py-16">
+                      <div className=" pt-6">
+                      <h1 className=" font-semibold text-white text-h1 pb-10">PREVIOUS EDITIONS</h1>
+
+        <PreviousEditions/>
+                      </div>
+        </div>
+      </section>
+
+
+
+      
+     
+
       <section id="speaker"> 
-        <div className=" py-16  pb-0">
+        <div className="  py-16  pb-0">
           <h1 className=" font-semibold text-yellow text-h1 pb-4">SPEAKERS</h1>
           <div className="py-10">
 

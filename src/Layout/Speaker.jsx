@@ -50,32 +50,20 @@ export default function Speaker() {
         modules={[FreeMode, Pagination]}
         className="mySwiper"
       >
-             <SwiperSlide>
-          <div className="group">
-            <div className=" relative ">
-              <img src={Senthil} />
-            </div>
-            <div className="bg-[#e6e6e6] group-hover:bg-primary duration-300 py-4">
-              <div className=" text-center text-h4  text-primary group-hover:text-white font-semibold">
-                Dr K Senthil Ganesh
-              </div>
-              <div className=" text-center text-yellow  px-5 text-h5 font-semibold">
-                Chairman, CII Coimbatore Zone & CEO, Transform Tech (I) Pvt Ltd
-              </div>
-            </div>
-          </div>
-        </SwiperSlide>
+   
         <SwiperSlide className="h-full">
           <div className="group h-full">
             <div className=" relative h-full ">
               <img src={Abhilash} />
             </div>
-            <div className="bg-[#e6e6e6] h-full group-hover:bg-primary duration-300 py-4">
-              <div className=" text-center text-h4  h-full text-primary group-hover:text-white font-semibold">
-                Mr Abhilash Misra
-              </div>
-              <div className=" text-center text-yellow  text-h5 font-semibold">
-                CEO ,NSE Academy
+            <div className="bg-[#e6e6e6]  group-hover:bg-primary duration-300 py-4">
+              <div className=" block ">
+                <div className=" text-center text-h4   text-primary group-hover:text-white font-semibold">
+                  Mr Abhilash Misra
+                </div>
+                <div className=" text-center text-yellow  text-h5 font-semibold">
+                  CEO ,NSE Academy
+                </div>
               </div>
             </div>
           </div>
@@ -119,18 +107,35 @@ export default function Speaker() {
             </div>
             <div className="bg-[#e6e6e6] group-hover:bg-primary duration-300 py-4">
               <div className=" text-center text-h4  text-primary group-hover:text-white font-semibold">
-              Ms S Malarvizhi
+                Ms S Malarvizhi
               </div>
               <div className=" text-center px-5 text-yellow  text-h5 font-semibold">
-              Co-Chairperson, National Higher
-Education Conclave 2023 &
-Managing Trustee, Sri Krishna Institutions
-
+                Co-Chairperson, National Higher Education Conclave 2023 &
+                Managing Trustee, Sri Krishna Institutions
               </div>
             </div>
           </div>
         </SwiperSlide>
-   
+
+        <SwiperSlide>
+          <div className="group">
+            <div className=" relative ">
+              <img src={Senthil} />
+            </div>
+            <div className="bg-[#e6e6e6]  group-hover:bg-primary duration-300 py-4">
+              <div className=" block">
+                <div className=" text-center text-h4  text-primary group-hover:text-white font-semibold">
+                  Dr K Senthil Ganesh
+                </div>
+                <div className=" text-center text-yellow   px-5 text-h5 font-semibold">
+                  Chairman, CII Coimbatore Zone & CEO, Transform Tech (I) Pvt
+                  Ltd
+                </div>
+              </div>
+            </div>
+          </div>
+        </SwiperSlide>
+
         <SwiperSlide>
           <div className="group">
             <div className=" relative ">
@@ -138,12 +143,10 @@ Managing Trustee, Sri Krishna Institutions
             </div>
             <div className="bg-[#e6e6e6] group-hover:bg-primary duration-300 py-4">
               <div className=" text-center text-h4  text-primary group-hover:text-white font-semibold">
-              Dr Christopher Abraham
+                Dr Christopher Abraham
               </div>
               <div className=" text-center text-yellow px-5  text-h5 font-semibold">
-              CEO & Head - Dubai Campus
-S P Jain School of Global Management
-
+                CEO & Head - Dubai Campus S P Jain School of Global Management
               </div>
             </div>
           </div>
@@ -155,12 +158,10 @@ S P Jain School of Global Management
             </div>
             <div className="bg-[#e6e6e6] group-hover:bg-primary duration-300 py-4">
               <div className=" text-center text-h4  text-primary group-hover:text-white font-semibold">
-              Mr Dulles Krishnan
+                Mr Dulles Krishnan
               </div>
               <div className=" text-center text-yellow  text-h5 font-semibold">
-              Managing Director - Enterprise
-Coursera India
-
+                Managing Director - Enterprise Coursera India
               </div>
             </div>
           </div>
@@ -172,12 +173,10 @@ Coursera India
             </div>
             <div className="bg-[#e6e6e6] group-hover:bg-primary duration-300 py-4">
               <div className=" text-center text-h4  text-primary group-hover:text-white font-semibold">
-              Dr Gururaj H Kidiyoor
+                Dr Gururaj H Kidiyoor
               </div>
               <div className=" text-center text-yellow  text-h5 font-semibold">
-              Director
-NITTE Institutions
-
+                Director NITTE Institutions
               </div>
             </div>
           </div>
@@ -189,14 +188,10 @@ NITTE Institutions
             </div>
             <div className="bg-[#e6e6e6] group-hover:bg-primary duration-300 py-4">
               <div className=" text-center text-h4  text-primary group-hover:text-white font-semibold">
-           
-Ms Vasanthi Srinivasan
-
+                Ms Vasanthi Srinivasan
               </div>
               <div className=" text-center text-yellow  text-h5 font-semibold">
-              Professor
-IIM Bangalore
-
+                Professor IIM Bangalore
               </div>
             </div>
           </div>
@@ -208,12 +203,10 @@ IIM Bangalore
             </div>
             <div className="bg-[#e6e6e6] group-hover:bg-primary duration-300 py-4">
               <div className=" text-center text-h4  text-primary group-hover:text-white font-semibold">
-              Dr S Senthilnathan
+                Dr S Senthilnathan
               </div>
               <div className=" text-center text-yellow  text-h5 font-semibold">
-              Professor
-Educational Technology, Bharathidasan University
-
+                Professor Educational Technology, Bharathidasan University
               </div>
             </div>
           </div>
@@ -225,12 +218,10 @@ Educational Technology, Bharathidasan University
             </div>
             <div className="bg-[#e6e6e6] group-hover:bg-primary duration-300 py-4">
               <div className=" text-center text-h4  text-primary group-hover:text-white font-semibold">
-              Ms Hemamalini S
+                Ms Hemamalini S
               </div>
               <div className=" text-center text-yellow  text-h5 font-semibold">
-              Director - Planning and Operations,
-Numentica Technologies Ltd
-
+                Director - Planning and Operations, Numentica Technologies Ltd
               </div>
             </div>
           </div>

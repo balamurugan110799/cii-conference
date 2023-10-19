@@ -6,12 +6,16 @@
   @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
   @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
   @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
 
 *{
     font-family: 'Varela Round', sans-serif;
 }
 .title{
     font-family: 'Varela Round', sans-serif;
+}
+.number-font{
+    font-family: 'Monoton', sans-serif;
 }
 .center{
     display: flex;
@@ -37,7 +41,7 @@
     margin: 20px 0px 0px 0px;
 }
 .swiper-pagination-bullet-active{
-    background-color: #909090!important;
+    background-color: #033C89!important;
 }
 
 
