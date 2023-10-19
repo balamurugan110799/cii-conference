@@ -3,7 +3,9 @@ import conference from "../Components/Asset/Image/Home/img.png";
 import { FaLocationArrow } from "react-icons/fa6";
 import { BsKey } from "react-icons/bs";
 import { RiUserStarLine, RiBaseStationLine, RiLightbulbFlashLine, RiSwapBoxLine, RiCpuLine } from "react-icons/ri";
+import CII from "../Components/Asset/Image/Home/cii.png"
 import {  } from "react-icons/bi";
+import vid from "../Components/Asset/Image/video/VID.mp4"
 export default function Expect() {
   return (
     <div>
@@ -104,6 +106,12 @@ export default function Expect() {
                       </div>
                     </div>
                   </div>
+
+                  <div>
+                      <video  poster={CII} className="mx-auto h-[200px]" autoPlay controls>
+                        <source src={vid}  type="video/mp4" />
+                      </video>
+                    </div>
                 </div>
               </div>
             </div>

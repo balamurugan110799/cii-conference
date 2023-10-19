@@ -13,6 +13,7 @@ import Speaker from "../Layout/Speaker";
 import PreviousEditions from "../Layout/Previous-Editions";
 import ConclaveSession from "../Layout/ConclaveSession";
 import Expect from "../Layout/Expect";
+import Sponser from "../Layout/Sponser";
 
 // import {SVG} from "../Components/SVG/rrreplicate.svg"
 
@@ -25,7 +26,7 @@ function Home() {
       answer: (
         <div className="bg-[#fee9cf] rounded-[10px] my-2 px-10 p-4">
           <p className=" text-[#784503] text-left text-[18px] ">
-            The event is on November 2, 2023, from 9.30 AM to 6.00 PM.
+          The event is on November 2, 2023, from 9.30 AM to 6.00 PM.
           </p>
         </div>
       ),
@@ -38,7 +39,8 @@ function Home() {
       answer: (
         <div className="bg-[#fee9cf] rounded-[10px] my-2 px-10 p-4">
           <p className=" text-[#784503] text-left text-[18px] ">
-            The event is on November 2, 2023, from 9.30 AM to 6.00 PM.
+          The event will be hosted at Hotel Le Meridien in Coimbatore, Tamil Nadu.
+
           </p>
         </div>
       ),
@@ -51,7 +53,7 @@ function Home() {
       answer: (
         <div className="bg-[#fee9cf] rounded-[10px] my-2 px-10 p-4">
           <p className=" text-[#784503] text-left text-[18px] ">
-            The event is on November 2, 2023, from 9.30 AM to 6.00 PM.
+          The National Higher Education Conclave (NHEC) is an event organized by CII, with a focus on AI and EdTech for transforming higher education. With an expected attendance of 500+, it serves as a platform for dialogue between education and industry stakeholders.
           </p>
         </div>
       ),
@@ -378,6 +380,9 @@ function Home() {
         </div>
 
         {/* <img src={SVG}/> */}
+      </section>
+      <section>
+        <Sponser/>
       </section>
       <section id="">
         <div className=" py-10 pb-8">
