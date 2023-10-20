@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import AI from "../Components/Asset/Image/Home/AI.png";
-import AIG from "../Components/Asset/Image/Home/AIF.jpg";
+import AIG from "../Components/Asset/Image/Home/AI_BRAN.png";
 import AI_BRAIN from "../Components/Asset/Image/Home/4402944_18296.jpg";
 import AI_TECH from "../Components/Asset/Image/Home/4546131_3922.jpg";
 import { IoIosArrowDown } from "react-icons/io";
@@ -26,7 +26,7 @@ function Home() {
       answer: (
         <div className="bg-[#fee9cf] rounded-[10px] my-2 px-10 p-4">
           <p className=" text-[#784503] text-left text-[18px] ">
-          The event is on November 2, 2023, from 9.30 AM to 6.00 PM.
+            The event is on November 2, 2023, from 9.30 AM to 6.00 PM.
           </p>
         </div>
       ),
@@ -39,8 +39,8 @@ function Home() {
       answer: (
         <div className="bg-[#fee9cf] rounded-[10px] my-2 px-10 p-4">
           <p className=" text-[#784503] text-left text-[18px] ">
-          The event will be hosted at Hotel Le Meridien in Coimbatore, Tamil Nadu.
-
+            The event will be hosted at Hotel Le Meridien in Coimbatore, Tamil
+            Nadu.
           </p>
         </div>
       ),
@@ -53,7 +53,10 @@ function Home() {
       answer: (
         <div className="bg-[#fee9cf] rounded-[10px] my-2 px-10 p-4">
           <p className=" text-[#784503] text-left text-[18px] ">
-          The National Higher Education Conclave (NHEC) is an event organized by CII, with a focus on AI and EdTech for transforming higher education. With an expected attendance of 500+, it serves as a platform for dialogue between education and industry stakeholders.
+            The National Higher Education Conclave (NHEC) is an event organized
+            by CII, with a focus on AI and EdTech for transforming higher
+            education. With an expected attendance of 500+, it serves as a
+            platform for dialogue between education and industry stakeholders.
           </p>
         </div>
       ),
@@ -139,6 +142,21 @@ function Home() {
     setFAQ(faq);
   };
 
+  const [data, setData] = useState({
+    username: "",
+  });
+
+  // const handleKeypressEvent = (e) => {
+  //   console.log(e);
+  //   data.username = "hello";
+  //   serForcerender(!forceRender);
+  // };
+  // const handleKeyDown = (e) => {
+  //   document.getElementById("keydown").style.background = "yellow";
+  // };
+  // const handleKeyUp = (e) => {
+  //   document.getElementById("keydown").style.background = "red";
+  // };
   return (
     <div>
       <section className=" ">
@@ -164,26 +182,26 @@ function Home() {
                         HOME
                       </div>
                       <a href="#event-info">
-                      <div className="title center text-base font-medium hover:text-yellow duration-300 text-white px-10 tracking-wider cursor-pointer">
-                        EVENT INFO
-                      </div>
+                        <div className="title center text-base font-medium hover:text-yellow duration-300 text-white px-10 tracking-wider cursor-pointer">
+                          EVENT INFO
+                        </div>
                       </a>
                       <a href="#speaker">
-                      <div className="title  text-base font-medium hover:text-yellow duration-300 text-white px-10 tracking-wider cursor-pointer">
-                        SPEAKER
-                      </div>
+                        <div className="title  text-base font-medium hover:text-yellow duration-300 text-white px-10 tracking-wider cursor-pointer">
+                          SPEAKER
+                        </div>
                       </a>
                       <a href="#sponsors">
-                      <div className=" title text-base font-medium hover:text-yellow duration-300 text-white px-10 tracking-wider cursor-pointer">
-                        SPONSORS
-                      </div>
+                        <div className=" title text-base font-medium hover:text-yellow duration-300 text-white px-10 tracking-wider cursor-pointer">
+                          SPONSORS
+                        </div>
                       </a>
                       <a href="#contact-us">
-                      <div className="title  text-base font-medium hover:text-yellow duration-300 text-white px-10 tracking-wider cursor-pointer">
-                       CONTACT US
-                      </div>
+                        <div className="title  text-base font-medium hover:text-yellow duration-300 text-white px-10 tracking-wider cursor-pointer">
+                          CONTACT US
+                        </div>
                       </a>
-                     
+
                       <div></div>
                     </div>
                   </div>
@@ -192,47 +210,47 @@ function Home() {
             </div>
             <div className=" container mx-auto">
               <div className=" grid  grid-cols-2">
-                <div></div>
-                <div className="">
-                  <div className="  my-12 pl-10  mx-auto">
-                    <div className="text-white font-semibold title text-left py-4 pb-2 text-h1 ">
-                      National Higher Education Conclave 2023{" "}
-                      <span className=" text-white">7th - Edition</span>
-                    </div>
-                    <h2 className=" text-h2 text-left text-secondary pb-4">
-                      Artificial Intelligence & Educational Technology for
-                      Transforming Higher Education
-                    </h2>
-                    <div className=" grid grid-cols-2 py-4">
-                      <div>
-                        <div className=" text-primary title text-h3 text-left font-semibold">
-                          VENUE
-                        </div>
-                        <p className=" text-h4 text-secondary text-left">
-                          Hotel Le Meridien,
-                        </p>
-                        <p className=" text-h4 text-secondary text-left">
-                          Neelambur, Coimbatore,{" "}
-                        </p>
-                        <p className=" text-h4 text-secondary text-left">
-                          Tamilnadu, India - 641062
-                        </p>
+                <div>
+                  <div className="">
+                    <div className="  my-12 mt-8 mx-auto">
+                      <div className="text-white font-semibold title text-left py-4 pt-0 pb-2 text-h1 ">
+                        National Higher Education Conclave 2023{" "}
+                        <span className=" text-white">7th - Edition</span>
                       </div>
-                      <div>
-                        <div className=" text-primary title text-h3 text-left font-semibold">
-                          DATE AND TIME
+                      <h2 className=" text-h2 text-left text-white pb-4">
+                        Artificial Intelligence & Educational Technology for
+                        Transforming Higher Education
+                      </h2>
+                      <div className=" grid grid-cols-2 py-4">
+                        <div>
+                          <div className=" text-white title text-h3 text-left font-semibold">
+                            VENUE
+                          </div>
+                          <p className=" text-h4 text-white text-left">
+                            Hotel Le Meridien,
+                          </p>
+                          <p className=" text-h4 text-white text-left">
+                            Neelambur, Coimbatore,{" "}
+                          </p>
+                          <p className=" text-h4 text-white text-left">
+                            Tamilnadu, India - 641062
+                          </p>
                         </div>
-                        <p className=" text-h4 text-secondary text-left">
-                          November 2nd, 2023
-                        </p>
-                        <p className=" text-h4 text-secondary text-left">
-                          9.30 a.m to 6.00 p.m
-                        </p>
+                        <div>
+                          <div className=" text-white title text-h3 text-left font-semibold">
+                            DATE AND TIME
+                          </div>
+                          <p className=" text-h4 text-white text-left">
+                            November 2nd, 2023
+                          </p>
+                          <p className=" text-h4 text-white text-left">
+                            9.30 a.m to 6.00 p.m
+                          </p>
+                        </div>
                       </div>
-                    </div>
-                    <div></div>
+                      <div></div>
 
-                    {/* <section class="portfolio-experiment absolute">
+                      {/* <section class="portfolio-experiment absolute">
                       <a>
                         <span class="text">Register now!</span>
                         <span class="line -right"></span>
@@ -242,15 +260,17 @@ function Home() {
                       </a>
                     </section> */}
 
-                    <div className=" text-yellow text-left">
-                    *fee applicable
-                    </div>
+                      <div className=" text-secondary text-left">
+                        *fee applicable
+                      </div>
 
-                    <div className="py-2 my-2 px-10 mx-auto text-h2 shadow  bg-primary hover:bg-yellow cursor-pointer duration-300 rounded-lg font-semibold title tracking-wider text-white">
-                      Register now!
+                      <div className="py-2 my-2 px-10 mx-auto text-h2 shadow hover:text-primary  bg-primary hover:bg-yellow cursor-pointer duration-300 rounded-lg font-semibold title tracking-wider text-white">
+                        Register now!
+                      </div>
                     </div>
                   </div>
                 </div>
+                <div className=""></div>
               </div>
             </div>
           </div>
@@ -258,6 +278,8 @@ function Home() {
           <img src={AIG} className=" h-[100vh]  object-cover w-full" />
         </div>
       </section>
+
+      <div></div>
 
       <section id="event-info" className=" container mx-auto">
         <div className=" py-16 ">
@@ -334,55 +356,65 @@ function Home() {
         </div>
       </section>
 
-      
-      <section className=" ">
-        <div className="pt-0 py-16">
-                      <div className=" pt-6">
-                      <h1 className=" font-semibold text-yellow text-h1 pb-10">CONCLAVE SESSION</h1>
-
-        <ConclaveSession/>
-                      </div>
-        </div>
-      </section>
-
-      <section className="pb-10 ">
-        <div className="pt-0 py-16">
-                      <div className=" ">
-                      {/* <h1 className=" font-semibold text-yellow text-h1 pb-10">PREVIOUS EDITIONS</h1> */}
-
-        <Expect/>
-                      </div>
-        </div>
-      </section>
-
-      <section className=" bg-yellow">
-        <div className="py-16">
-                      <div className=" pt-6">
-                      <h1 className=" font-semibold text-white text-h1 pb-10">PREVIOUS EDITIONS</h1>
-
-        <PreviousEditions/>
-                      </div>
-        </div>
-      </section>
-
-
-
-      
-     
-
-      <section id="speaker"> 
+      <section id="speaker">
         <div className="  py-16  pb-0">
           <h1 className=" font-semibold text-yellow text-h1 pb-4">SPEAKERS</h1>
           <div className="py-10">
-
-          <Speaker/>
+            <Speaker />
           </div>
         </div>
 
         {/* <img src={SVG}/> */}
       </section>
+
+      <section className=" ">
+        <div className="pt-0 py-16">
+          <div className=" pt-6">
+            <h1 className=" font-semibold text-yellow text-h1 pb-10">
+              CONCLAVE SESSION
+            </h1>
+
+            <ConclaveSession />
+          </div>
+        </div>
+      </section>
+      <div className=" bg-primary">
+        <input
+          type="text"
+          // onKeyPress={(e) => handleKeypressEvent(e)}
+          // onKeyDown={(e) => handleKeyDown(e)}
+          // onKeyUp={(e) => handleKeyUp(e)}
+          id="keydown"
+          
+        />
+        <input type="text" value={data.username} disbled />
+      </div>
+
+      <section className="pb-10 ">
+        <div className="pt-0 py-16">
+          <div className=" ">
+            {/* <h1 className=" font-semibold text-yellow text-h1 pb-10">PREVIOUS EDITIONS</h1> */}
+
+            <Expect />
+          </div>
+        </div>
+      </section>
+
+      <section className=" bg-yellow">
+        <div className="py-16">
+          <div className=" pt-6">
+            <h1 className=" font-semibold text-white text-h1 pb-10">
+              PREVIOUS EDITIONS
+            </h1>
+
+            <PreviousEditions />
+          </div>
+        </div>
+      </section>
+
+    
       <section>
-        <Sponser/>
+        <Sponser />
       </section>
       <section id="">
         <div className=" py-10 pb-8">

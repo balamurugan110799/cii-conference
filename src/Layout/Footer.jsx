@@ -7,8 +7,8 @@ import Slider from "./Slider";
 
 function Footer() {
   return (
-    <div>
-      <div className=" bg-[#e6e6e6] py-16">
+    <div className="bg-[#e6e6e6] py-16">
+      <div className="  py-16">
         <div className=" container mx-auto">
           <div id="contact-us" className=" grid grid-cols-12 gap-10">
             <div className=" col-span-5">

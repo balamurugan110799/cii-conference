@@ -12,7 +12,7 @@ export default function Expect() {
       <div className=" container mx-auto">
         <div className=" grid grid-cols-12 gap-6">
           <div className=" col-span-7">
-            <div className=" text-left  pb-6 text-yellow text-h1 font-semibold">
+            <div className=" text-left  pb-6 pt-6 text-yellow text-h1 font-semibold">
               What you can Expect
             </div>
             <div className=" grid grid-cols-12 gap-4">
@@ -109,7 +109,7 @@ export default function Expect() {
 
                   <div>
                       <video  poster={CII} className="mx-auto h-[200px]" autoPlay controls>
-                        <source src={vid}  type="video/mp4" />
+                        {/* <source src={vid}  type="video/mp4" /> */}
                       </video>
                     </div>
                 </div>
