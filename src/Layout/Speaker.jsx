@@ -54,14 +54,14 @@ export default function Speaker() {
         <SwiperSlide className="h-full">
           <div className="group h-full">
             <div className=" relative h-full ">
-              <img src={Abhilash} />
+              <img src={Abhilash}  className="sm:object-cover smmd:object-cover w-full"/>
             </div>
             <div className="bg-[#e6e6e6]  group-hover:bg-primary duration-300 py-4">
               <div className=" block ">
-                <div className=" text-center text-h4   text-primary group-hover:text-white font-semibold">
+                <div className=" text-center text-h4 sm:text-h5 smmd:text-h5  text-primary group-hover:text-white font-semibold">
                   Mr Abhilash Misra
                 </div>
-                <div className=" text-center text-yellow  text-h5 font-semibold">
+                <div className=" text-center text-yellow sm:text-base smmd:text-base text-h5 font-semibold">
                   CEO ,NSE Academy
                 </div>
               </div>
@@ -71,13 +71,13 @@ export default function Speaker() {
         <SwiperSlide>
           <div className="group">
             <div className=" relative ">
-              <img src={Nandini} />
+              <img src={Nandini} className="sm:object-cover smmd:object-cover w-full"/>
             </div>
             <div className="bg-[#e6e6e6] group-hover:bg-primary duration-300 py-4">
-              <div className=" text-center text-h4  text-primary group-hover:text-white font-semibold">
+              <div className=" text-center text-h4 sm:text-h5 smmd:text-h5  text-primary group-hover:text-white font-semibold">
                 Dr R Nandini
               </div>
-              <div className=" text-center text-yellow  px-6 text-h5 font-semibold">
+              <div className=" text-center text-yellow sm:text-base smmd:text-base text-h5 font-semibold">
                 Co-Chairperson, National Higher Education Conclave 2023 &
                 Founder Trustee, GRG Trust
               </div>
@@ -87,13 +87,13 @@ export default function Speaker() {
         <SwiperSlide>
           <div className="group">
             <div className=" relative ">
-              <img src={Shankar} />
+              <img src={Shankar} className="sm:object-cover smmd:object-cover w-full"/>
             </div>
             <div className="bg-[#e6e6e6] group-hover:bg-primary duration-300 py-4">
-              <div className=" text-center text-h4  text-primary group-hover:text-white font-semibold">
+              <div className=" text-center text-h4 sm:text-h5 smmd:text-h5  text-primary group-hover:text-white font-semibold">
                 Mr Shankar Vanavarayar
               </div>
-              <div className=" text-center text-yellow px-6   text-h5 font-semibold">
+              <div className=" text-center text-yellow sm:text-base smmd:text-base text-h5 font-semibold">
                 Chairman, CII Tamil Nadu State Council & Executive Director, ABT
                 Industries Ltd
               </div>
@@ -103,13 +103,13 @@ export default function Speaker() {
         <SwiperSlide>
           <div className="group">
             <div className=" relative ">
-              <img src={Malarvizhi} />
+              <img src={Malarvizhi} className="sm:object-cover smmd:object-cover w-full"/>
             </div>
             <div className="bg-[#e6e6e6] group-hover:bg-primary duration-300 py-4">
-              <div className=" text-center text-h4  text-primary group-hover:text-white font-semibold">
+              <div className=" text-center text-h4 sm:text-h5 smmd:text-h5  text-primary group-hover:text-white font-semibold">
                 Ms S Malarvizhi
               </div>
-              <div className=" text-center px-5 text-yellow  text-h5 font-semibold">
+              <div className=" text-center text-yellow sm:text-base smmd:text-base text-h5 font-semibold">
                 Co-Chairperson, National Higher Education Conclave 2023 &
                 Managing Trustee, Sri Krishna Institutions
               </div>
@@ -120,14 +120,14 @@ export default function Speaker() {
         <SwiperSlide>
           <div className="group">
             <div className=" relative ">
-              <img src={Senthil} />
+              <img src={Senthil} className="sm:object-cover smmd:object-cover w-full"/>
             </div>
             <div className="bg-[#e6e6e6]  group-hover:bg-primary duration-300 py-4">
               <div className=" block">
-                <div className=" text-center text-h4  text-primary group-hover:text-white font-semibold">
+                <div className=" text-center text-h4 sm:text-h5 smmd:text-h5  text-primary group-hover:text-white font-semibold">
                   Dr K Senthil Ganesh
                 </div>
-                <div className=" text-center text-yellow   px-5 text-h5 font-semibold">
+                <div className=" text-center text-yellow sm:text-base smmd:text-base text-h5 font-semibold">
                   Chairman, CII Coimbatore Zone & CEO, Transform Tech (I) Pvt
                   Ltd
                 </div>
@@ -139,13 +139,13 @@ export default function Speaker() {
         <SwiperSlide>
           <div className="group">
             <div className=" relative ">
-              <img src={Christopher} />
+              <img src={Christopher} className="sm:object-cover smmd:object-cover w-full"/>
             </div>
             <div className="bg-[#e6e6e6] group-hover:bg-primary duration-300 py-4">
-              <div className=" text-center text-h4  text-primary group-hover:text-white font-semibold">
+              <div className=" text-center text-h4 sm:text-h5 smmd:text-h5  text-primary group-hover:text-white font-semibold">
                 Dr Christopher Abraham
               </div>
-              <div className=" text-center text-yellow px-5  text-h5 font-semibold">
+              <div className=" text-center text-yellow sm:text-base smmd:text-base text-h5 font-semibold">
                 CEO & Head - Dubai Campus S P Jain School of Global Management
               </div>
             </div>
@@ -154,13 +154,13 @@ export default function Speaker() {
         <SwiperSlide>
           <div className="group">
             <div className=" relative ">
-              <img src={Dulles} />
+              <img src={Dulles} className="sm:object-cover smmd:object-cover w-full" />
             </div>
             <div className="bg-[#e6e6e6] group-hover:bg-primary duration-300 py-4">
-              <div className=" text-center text-h4  text-primary group-hover:text-white font-semibold">
+              <div className=" text-center text-h4 sm:text-h5 smmd:text-h5  text-primary group-hover:text-white font-semibold">
                 Mr Dulles Krishnan
               </div>
-              <div className=" text-center text-yellow  text-h5 font-semibold">
+              <div className=" text-center text-yellow sm:text-base smmd:text-base text-h5 font-semibold">
                 Managing Director - Enterprise Coursera India
               </div>
             </div>
@@ -169,13 +169,13 @@ export default function Speaker() {
         <SwiperSlide>
           <div className="group">
             <div className=" relative ">
-              <img src={Gururaj} />
+              <img src={Gururaj} className="sm:object-cover smmd:object-cover w-full"/>
             </div>
             <div className="bg-[#e6e6e6] group-hover:bg-primary duration-300 py-4">
-              <div className=" text-center text-h4  text-primary group-hover:text-white font-semibold">
+              <div className=" text-center text-h4 sm:text-h5 smmd:text-h5  text-primary group-hover:text-white font-semibold">
                 Dr Gururaj H Kidiyoor
               </div>
-              <div className=" text-center text-yellow  text-h5 font-semibold">
+              <div className=" text-center text-yellow sm:text-base smmd:text-base text-h5 font-semibold">
                 Director NITTE Institutions
               </div>
             </div>
@@ -184,13 +184,13 @@ export default function Speaker() {
         <SwiperSlide>
           <div className="group">
             <div className=" relative ">
-              <img src={Vasanthi} />
+              <img src={Vasanthi} className="sm:object-cover smmd:object-cover w-full"/>
             </div>
             <div className="bg-[#e6e6e6] group-hover:bg-primary duration-300 py-4">
-              <div className=" text-center text-h4  text-primary group-hover:text-white font-semibold">
+              <div className=" text-center text-h4 sm:text-h5 smmd:text-h5  text-primary group-hover:text-white font-semibold">
                 Ms Vasanthi Srinivasan
               </div>
-              <div className=" text-center text-yellow  text-h5 font-semibold">
+              <div className=" text-center text-yellow sm:text-base smmd:text-base text-h5 font-semibold">
                 Professor IIM Bangalore
               </div>
             </div>
@@ -199,13 +199,13 @@ export default function Speaker() {
         <SwiperSlide>
           <div className="group">
             <div className=" relative ">
-              <img src={Senthilnathan} />
+              <img src={Senthilnathan} className="sm:object-cover smmd:object-cover w-full"/>
             </div>
             <div className="bg-[#e6e6e6] group-hover:bg-primary duration-300 py-4">
-              <div className=" text-center text-h4  text-primary group-hover:text-white font-semibold">
+              <div className=" text-center text-h4 sm:text-h5 smmd:text-h5  text-primary group-hover:text-white font-semibold">
                 Dr S Senthilnathan
               </div>
-              <div className=" text-center text-yellow  text-h5 font-semibold">
+              <div className=" text-center text-yellow sm:text-base smmd:text-base text-h5 font-semibold">
                 Professor Educational Technology, Bharathidasan University
               </div>
             </div>
@@ -214,13 +214,13 @@ export default function Speaker() {
         <SwiperSlide>
           <div className="group">
             <div className=" relative ">
-              <img src={Hemamalini} />
+              <img src={Hemamalini} className="sm:object-cover smmd:object-cover w-full" />
             </div>
             <div className="bg-[#e6e6e6] group-hover:bg-primary duration-300 py-4">
-              <div className=" text-center text-h4  text-primary group-hover:text-white font-semibold">
+              <div className=" text-center text-h4 sm:text-h5 smmd:text-h5  text-primary group-hover:text-white font-semibold">
                 Ms Hemamalini S
               </div>
-              <div className=" text-center text-yellow  text-h5 font-semibold">
+              <div className=" text-center text-yellow sm:text-base smmd:text-base text-h5 font-semibold">
                 Director - Planning and Operations, Numentica Technologies Ltd
               </div>
             </div>

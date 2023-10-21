@@ -59,8 +59,8 @@ export default function Sponser() {
   };
   return (
     <>
- <div id="sponsors" className=" container mx-auto py-16">
-        <h1 className=" font-semibold text-yellow text-h1 pb-6">SPONSORS</h1>
+ <div id="sponsors" className=" container mx-auto py-16 sm:pb-10 smmd:pb-10">
+        <h1 className=" font-semibold text-yellow text-h1 sm:text-h3 smmd:text-h3 pb-6">SPONSORS</h1>
      
     <div className="">
     <Swiper

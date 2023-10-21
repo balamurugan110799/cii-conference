@@ -25,7 +25,7 @@ function Home() {
         "What is the date and time of the National Higher Education Conclave 2023?",
       answer: (
         <div className="bg-[#fee9cf] rounded-[10px] my-2 px-10 p-4">
-          <p className=" text-[#784503] text-left text-[18px] ">
+          <p className=" text-[#784503] text-left text-[18px]  sm:text-base smmd:text-base ">
             The event is on November 2, 2023, from 9.30 AM to 6.00 PM.
           </p>
         </div>
@@ -38,7 +38,7 @@ function Home() {
         "Where will the event take place? Please provide the venue details.",
       answer: (
         <div className="bg-[#fee9cf] rounded-[10px] my-2 px-10 p-4">
-          <p className=" text-[#784503] text-left text-[18px] ">
+          <p className=" text-[#784503] text-left text-[18px]  sm:text-base smmd:text-base ">
             The event will be hosted at Hotel Le Meridien in Coimbatore, Tamil
             Nadu.
           </p>
@@ -52,7 +52,7 @@ function Home() {
         "Could you provide more information about the NHEC, such as its objectives and the expected number of attendees?",
       answer: (
         <div className="bg-[#fee9cf] rounded-[10px] my-2 px-10 p-4">
-          <p className=" text-[#784503] text-left text-[18px] ">
+          <p className=" text-[#784503] text-left text-[18px]  sm:text-base smmd:text-base ">
             The National Higher Education Conclave (NHEC) is an event organized
             by CII, with a focus on AI and EdTech for transforming higher
             education. With an expected attendance of 500+, it serves as a
@@ -69,13 +69,13 @@ function Home() {
         "How much is the registration fee to attend the National Higher Education Conclave 2023?",
       answer: (
         <div className="bg-[#fee9cf] rounded-[10px] my-2 px-10 p-4">
-          <p className=" text-[#784503] text-left text-[18px] ">
+          <p className=" text-[#784503] text-left text-[18px]  sm:text-base smmd:text-base ">
             Industry Attendees: ₹7,500 + GST per person.
           </p>
-          <p className=" text-[#784503] text-left text-[18px] ">
+          <p className=" text-[#784503] text-left text-[18px]  sm:text-base smmd:text-base ">
             Institutional Faculty: ₹3,500 + GST per person.
           </p>
-          <p className=" text-[#784503] text-left text-[18px] ">
+          <p className=" text-[#784503] text-left text-[18px]  sm:text-base smmd:text-base ">
             Please note that these fees are applicable per person for respective
             categories.
           </p>
@@ -89,19 +89,19 @@ function Home() {
         "What are the key sessions and discussions that will occur during the conclave, particularly concerning AI and EdTech in higher education?",
       answer: (
         <div className="bg-[#fee9cf] rounded-[10px] my-2 px-10 p-4">
-          <p className=" text-[#784503] text-left text-[18px] ">
+          <p className=" text-[#784503] text-left text-[18px]  sm:text-base smmd:text-base ">
             Plenary Session on AI and EdTech
           </p>
-          <p className=" text-[#784503] text-left text-[18px] ">
+          <p className=" text-[#784503] text-left text-[18px]  sm:text-base smmd:text-base ">
             Enhancing Teaching and Learning (Discussion)
           </p>
-          <p className=" text-[#784503] text-left text-[18px] ">
+          <p className=" text-[#784503] text-left text-[18px]  sm:text-base smmd:text-base ">
             AI for Academic Administration
           </p>
-          <p className=" text-[#784503] text-left text-[18px] ">
+          <p className=" text-[#784503] text-left text-[18px]  sm:text-base smmd:text-base ">
             Student Engagement with AI
           </p>
-          <p className=" text-[#784503] text-left text-[18px] ">
+          <p className=" text-[#784503] text-left text-[18px]  sm:text-base smmd:text-base ">
             Future of Work and Education (Discussion)
           </p>
         </div>
@@ -114,7 +114,7 @@ function Home() {
         "What are the key sessions and discussions that will occur during the conclave, particularly concerning AI and EdTech in higher education?",
       answer: (
         <div className="bg-[#fee9cf] rounded-[10px] my-2 px-10 p-4">
-          <p className=" text-[#784503] text-left text-[18px] ">
+          <p className=" text-[#784503] text-left text-[18px]  sm:text-base smmd:text-base ">
             CII NHEC is designed for Institutional Correspondents, Trustees,
             Secretaries, Industry Board Members, CEOs, Directors, and Senior
             Officials.
@@ -168,15 +168,15 @@ function Home() {
 
             <div className="  py-6">
               <div className=" container mx-auto">
-                <div className="grid grid-cols-12 gap-4">
-                  <div className=" col-span-2">
+                <div className="grid grid-cols-12 gap-4 sm:grid-cols-1 smmd:grid-cols-1 ">
+                  <div className="sm:col-span-12 col-span-2">
                     <img
                       src={CII}
                       alt="CII"
                       className=" object-cover h-[80px]"
                     />
                   </div>
-                  <div className=" col-span-10 ">
+                  <div className=" col-span-10 sm:hidden smmd:hidden ">
                     <div className="flex justify-end  py-7">
                       <div className=" title text-base font-medium hover:text-yellow duration-300 text-white pr-10 tracking-wider cursor-pointer">
                         HOME
@@ -208,63 +208,54 @@ function Home() {
                 </div>
               </div>
             </div>
-            <div className=" container mx-auto">
-              <div className=" grid  grid-cols-2">
+            <div className=" container mx-auto sm:px-4">
+              <div className=" grid  grid-cols-2 sm:grid-cols-1 smmd:grid-cols-1">
                 <div>
                   <div className="">
                     <div className="  my-12 mt-8 mx-auto">
-                      <div className="text-white font-semibold title text-left py-4 pt-0 pb-2 text-h1 ">
+                      <div className="text-white font-semibold title text-left py-4 pt-0 pb-2 text-h4 sm:text-h4 smmd:text-h4 ">
                         National Higher Education Conclave 2023{" "}
                         <span className=" text-white">7th - Edition</span>
                       </div>
-                      <h2 className=" text-h2 text-left text-white pb-4">
+                      <h2 className=" text-h2 text-left sm:text-h5 smmd:text-h5 text-white pb-4">
                         Artificial Intelligence & Educational Technology for
                         Transforming Higher Education
                       </h2>
                       <div className=" grid grid-cols-2 py-4">
                         <div>
-                          <div className=" text-white title text-h3 text-left font-semibold">
+                          <div className=" text-white title text-h3 sm:text-h5  smmd:text-h5 text-left font-semibold">
                             VENUE
                           </div>
-                          <p className=" text-h4 text-white text-left">
+                          <p className=" text-h4 text-white sm:text-h6 smmd:text-h6 text-left">
                             Hotel Le Meridien,
                           </p>
-                          <p className=" text-h4 text-white text-left">
+                          <p className=" text-h4 text-white sm:text-h6 smmd:text-h6 text-left">
                             Neelambur, Coimbatore,{" "}
                           </p>
-                          <p className=" text-h4 text-white text-left">
+                          <p className=" text-h4 text-white sm:text-h6 smmd:text-h6 text-left">
                             Tamilnadu, India - 641062
                           </p>
                         </div>
                         <div>
-                          <div className=" text-white title text-h3 text-left font-semibold">
+                          <div className=" text-white title text-h3 sm:text-h5 smmd:text-h5 text-left font-semibold">
                             DATE AND TIME
                           </div>
-                          <p className=" text-h4 text-white text-left">
+                          <p className=" text-h4 text-white sm:text-h6 smmd:text-h6 text-left">
                             November 2nd, 2023
                           </p>
-                          <p className=" text-h4 text-white text-left">
+                          <p className=" text-h4 text-white sm:text-h6 smmd:text-h6 text-left">
                             9.30 a.m to 6.00 p.m
                           </p>
                         </div>
                       </div>
                       <div></div>
 
-                      {/* <section class="portfolio-experiment absolute">
-                      <a>
-                        <span class="text">Register now!</span>
-                        <span class="line -right"></span>
-                        <span class="line -top"></span>
-                        <span class="line -left"></span>
-                        <span class="line -bottom"></span>
-                      </a>
-                    </section> */}
 
-                      <div className=" text-secondary text-left">
+                      <div className=" text-secondary sm:pt-10 smmd:pt-10 text-left">
                         *fee applicable
                       </div>
 
-                      <div className="py-2 my-2 px-10 mx-auto text-h2 shadow hover:text-primary  bg-primary hover:bg-yellow cursor-pointer duration-300 rounded-lg font-semibold title tracking-wider text-white">
+                      <div className="py-2 my-2 px-10 sm:text-h4 smmd:text-h4 mx-auto text-h2 shadow hover:text-primary  bg-primary hover:bg-yellow cursor-pointer duration-300 rounded-lg font-semibold title tracking-wider text-white">
                         Register now!
                       </div>
                     </div>
@@ -281,18 +272,18 @@ function Home() {
 
       <div></div>
 
-      <section id="event-info" className=" container mx-auto">
-        <div className=" py-16 ">
-          <h1 className=" font-semibold text-yellow text-h1 pb-4">
+      <section id="event-info" className=" container mx-auto sm:px-4 smmd:px-4">
+        <div className=" py-16  sm:pb-10 smmd:pb-10">
+          <h1 className=" font-semibold sm:text-h3 smmd:text-h3 text-yellow text-h1 pb-4">
             EVENT INFO
           </h1>
-          <div className=" grid grid-cols-12 py-2 gap-10">
-            <div className=" col-span-4">
-              <img src={AI_BRAIN} />
+          <div className=" grid grid-cols-12 sm:grid-cols-1 smmd:grid-cols-1 py-2 gap-10">
+            <div className=" col-span-4 sm:col-span-12 smmd:col-span-12">
+              <img src={AI_BRAIN} className=" sm:w-full smmd:w-full" />
             </div>
 
-            <div className=" col-span-8  h-full center">
-              <h3 className=" text-h3 text-left text-[#4f4f4f] ">
+            <div className=" col-span-8 sm:col-span-12 smmd:col-span-12  h-full center">
+              <h3 className=" text-h3 sm:text-h5 smmd:text-h5 text-left text-[#4f4f4f] ">
                 <span className=" ml-16">CII </span>is organizing the 7th
                 edition of National Higher Education Conclave (NHEC) with the
                 theme,{" "}
@@ -305,10 +296,10 @@ function Home() {
             </div>
           </div>
 
-          <div className=" grid grid-cols-12 pt-8 gap-6">
-            <div className=" col-span-8 py-16">
+          <div className=" grid grid-cols-12 sm:grid-cols-1 smmd:grid-cols-1  pt-8 gap-6">
+            <div className=" col-span-8 sm:col-span-12 smmd:col-span-12 sm:py-8 smmd:py-8 sm:pt-0 smmd:pt-0 py-16">
               <div>
-                <p className=" text-[18px] text-left pt-4 text-[#686868] ">
+                <p className=" text-[18px] sm:text-base smmd:text-base text-left pt-4 text-[#686868] ">
                   <span> Technology</span> adoption in higher education has
                   advanced significantly in many ways and technology is poised
                   to drive delivery of higher education in the future. In
@@ -327,7 +318,7 @@ function Home() {
 
               <div>
                 <div>
-                  <p className=" text-[18px] text-left pt-4 text-[#686868] ">
+                  <p className=" text-[18px]  sm:text-base smmd:text-base text-left pt-4 text-[#686868] ">
                     Accordingly, NHEC will provide an opportunity for
                     constructive dialogues and deliberation among all the
                     stakeholders, including the industry, in the education
@@ -337,7 +328,7 @@ function Home() {
               </div>
 
               <div>
-                <p className=" text-[18px] text-left pt-4 text-[#686868] ">
+                <p className=" text-[18px]  sm:text-base smmd:text-base text-left pt-4 text-[#686868] ">
                   The conclave is expected to be attended by 500+ delegates
                   consisting of a mix of{" "}
                   <span className=" font-semibold text-primary">
@@ -349,28 +340,27 @@ function Home() {
               </div>
             </div>
 
-            <div className=" col-span-4 h-full">
-              <img src={AI_TECH} className="w-full h-full" />
+            <div className=" col-span-4 sm:col-span-12 smmd:col-span-12 h-full">
+              <img src={AI_TECH} className="w-full h-full sm:hidden smmd:hidden" />
             </div>
           </div>
         </div>
       </section>
 
       <section id="speaker">
-        <div className="  py-16  pb-0">
-          <h1 className=" font-semibold text-yellow text-h1 pb-4">SPEAKERS</h1>
-          <div className="py-10">
+        <div className="  py-16  sm:pt-0 smmd:pt-0 pb-0">
+          <h1 className=" font-semibold text-yellow text-h1 sm:text-h3 smmd:text-h3 pb-4 sm:pb-10 smmd:pb-10">SPEAKERS</h1>
+          <div className="py-10 sm:py-0 smmd:py-0 sm:px-4 smmd:px-4">
             <Speaker />
           </div>
         </div>
 
-        {/* <img src={SVG}/> */}
       </section>
 
       <section className=" ">
         <div className="pt-0 py-16">
           <div className=" pt-6">
-            <h1 className=" font-semibold text-yellow text-h1 pb-10">
+            <h1 className=" font-semibold text-yellow text-h1 sm:pt-10 smmd:pt-10 sm:pb-0 smmd:pb-0 sm:text-h3 smmd:text-h3 pb-10">
               CONCLAVE SESSION
             </h1>
 
@@ -378,32 +368,31 @@ function Home() {
           </div>
         </div>
       </section>
-      <div className=" bg-primary">
+      <div className=" sm:hidden smmd:hidden bg-primary">
         <input
           type="text"
           // onKeyPress={(e) => handleKeypressEvent(e)}
           // onKeyDown={(e) => handleKeyDown(e)}
           // onKeyUp={(e) => handleKeyUp(e)}
           id="keydown"
-          
+
         />
         <input type="text" value={data.username} disbled />
       </div>
 
       <section className="pb-10 ">
-        <div className="pt-0 py-16">
+        <div className="pt-0 py-16 sm:pb-0 smmd:pb-0">
           <div className=" ">
-            {/* <h1 className=" font-semibold text-yellow text-h1 pb-10">PREVIOUS EDITIONS</h1> */}
 
             <Expect />
           </div>
         </div>
       </section>
 
-      <section className=" bg-yellow">
+      <section className=" bg-yellow sm:px-4 smmd:px-4">
         <div className="py-16">
           <div className=" pt-6">
-            <h1 className=" font-semibold text-white text-h1 pb-10">
+            <h1 className=" font-semibold text-white  sm:text-h3 smmd:text-h3 text-h1 pb-10">
               PREVIOUS EDITIONS
             </h1>
 
@@ -412,37 +401,35 @@ function Home() {
         </div>
       </section>
 
-    
+
       <section>
         <Sponser />
       </section>
       <section id="">
         <div className=" py-10 pb-8">
-          <h1 className=" font-semibold text-yellow text-h1">
+          <h1 className=" font-semibold sm:text-h3 smmd:text-h3 text-yellow text-h1">
             Frequently Asked Questions
           </h1>
         </div>
 
-        <div className="pb-16">
-          <div className=" grid grid-cols-12">
-            <div className=" col-span-2"></div>
-            <div className=" col-span-8 ">
+        <div className="pb-16 sm:px-4 smmd:px-4">
+          <div className=" grid grid-cols-12 sm:grid-cols-1 smmd:grid-cols-1">
+            <div className=" col-span-2 sm:hidden smmd:hidden"></div>
+            <div className=" col-span-8  ">
               {faq?.map((v, i) => {
                 return (
                   <div key={i}>
                     <div
                       onClick={() => handleFaq(v, i)}
-                      className={`${
-                        v?.status === true
+                      className={`${v?.status === true
                           ? "border-primary text-primary"
                           : "border-secondary text-[#6d6d6d] mb-2"
-                      } cursor-pointer duration-3000 text-left px-10 relative border-2   py-2 text-h4 rounded-[10px] `}
+                        } cursor-pointer duration-3000 text-left px-10 relative border-2  sm:text-h5 smmd:text-h5  py-2 text-h4 rounded-[10px] `}
                     >
                       {v?.question}
                       <div
-                        className={` ${
-                          v?.status === true ? "rotate-180" : "rotate-0	"
-                        } duration-500 absolute right-0 top-0 p-3 `}
+                        className={` ${v?.status === true ? "rotate-180" : "rotate-0	"
+                          } duration-500 absolute right-0 top-0 p-3 `}
                       >
                         <IoIosArrowDown />
                       </div>
