@@ -10,7 +10,7 @@ function Footer() {
     <div className="bg-[#e6e6e6] py-16">
       <div className="  py-16 sm:py-0">
         <div className=" container mx-auto sm:px-4 smmd:px-4">
-          <div id="contact-us" className=" grid grid-cols-12 gap-10 sm:grid-cols-1 smmd:grid-cols-1">
+          <div id="contact-us" className=" grid grid-cols-12 gap-10 sm:grid-cols-1  md:grid-cols-1 smmd:grid-cols- 1">
             <div className=" col-span-5">
               <h3 className=" text-h3 sm:text-h5 smmd:text-h5 text-primary font-semibold text-left">
                 Confederation of Indian Industry Coimbatore

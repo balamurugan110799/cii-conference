@@ -5,8 +5,8 @@ import { FaLocationArrow } from "react-icons/fa6";
 export default function ConclaveSession() {
   return (
     <div className=" container mx-auto pb-16 sm:px-4 smmd:px-4 sm:pt-10 sm:pb-0 smmd:pb-0 smmd:pt-10">
-      <div className=" grid grid-cols-12 sm:grid-cols-1 smmd:grid-cols-1">
-        <div className=" sm:hidden smmd:hidden"></div>
+      <div className=" grid grid-cols-12 sm:grid-cols-1 smmd:grid-cols-1 md:grid-cols-1">
+        <div className=" sm:hidden smmd:hidden md:hidden"></div>
         <div className=" col-span-3 sm:col-span-12 smmd:col-span-12">
           <img src={IMG} className=" h-[400px] w-full object-cover" />
         </div>

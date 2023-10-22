@@ -168,7 +168,7 @@ function Home() {
 
             <div className="  py-6">
               <div className=" container mx-auto">
-                <div className="grid grid-cols-12 gap-4 sm:grid-cols-1 smmd:grid-cols-1 ">
+                <div className="grid grid-cols-12 gap-4 sm:grid-cols-1 smmd:grid-cols-1 md:grid-cols-1 ">
                   <div className="sm:col-span-12 col-span-2">
                     <img
                       src={CII}
@@ -176,7 +176,7 @@ function Home() {
                       className=" object-cover h-[80px]"
                     />
                   </div>
-                  <div className=" col-span-10 sm:hidden smmd:hidden ">
+                  <div className=" col-span-10 sm:hidden smmd:hidden md:hidden ">
                     <div className="flex justify-end  py-7">
                       <div className=" title text-base font-medium hover:text-yellow duration-300 text-white pr-10 tracking-wider cursor-pointer">
                         HOME
@@ -209,7 +209,7 @@ function Home() {
               </div>
             </div>
             <div className=" container mx-auto sm:px-4">
-              <div className=" grid  grid-cols-2 sm:grid-cols-1 smmd:grid-cols-1">
+              <div className=" grid  grid-cols-2 sm:grid-cols-1 smmd:grid-cols-1 md:grid-cols-1 md:pt-2">
                 <div>
                   <div className="">
                     <div className="  my-12 mt-8 mx-auto">
@@ -274,15 +274,15 @@ function Home() {
 
       <section id="event-info" className=" container mx-auto sm:px-4 smmd:px-4">
         <div className=" py-16  sm:pb-10 smmd:pb-10">
-          <h1 className=" font-semibold sm:text-h3 smmd:text-h3 text-yellow text-h1 pb-4">
+          <h1 className=" font-semibold sm:text-h3 smmd:text-h3  text-yellow text-h1 pb-4">
             EVENT INFO
           </h1>
-          <div className=" grid grid-cols-12 sm:grid-cols-1 smmd:grid-cols-1 py-2 gap-10">
-            <div className=" col-span-4 sm:col-span-12 smmd:col-span-12">
+          <div className=" grid grid-cols-12 sm:grid-cols-1 smmd:grid-cols-1 md:grid-cols-1 py-2 gap-10">
+            <div className=" col-span-4 sm:col-span-12 smmd:col-span-12 md:col-span-12">
               <img src={AI_BRAIN} className=" sm:w-full smmd:w-full" />
             </div>
 
-            <div className=" col-span-8 sm:col-span-12 smmd:col-span-12  h-full center">
+            <div className=" col-span-8 sm:col-span-12 smmd:col-span-12 md:col-span-12  h-full center">
               <h3 className=" text-h3 sm:text-h5 smmd:text-h5 text-left text-[#4f4f4f] ">
                 <span className=" ml-16">CII </span>is organizing the 7th
                 edition of National Higher Education Conclave (NHEC) with the
@@ -296,7 +296,7 @@ function Home() {
             </div>
           </div>
 
-          <div className=" grid grid-cols-12 sm:grid-cols-1 smmd:grid-cols-1  pt-8 gap-6">
+          <div className=" grid grid-cols-12 sm:grid-cols-1 smmd:grid-cols-1 md:grid-cols-1 pt-8 gap-6">
             <div className=" col-span-8 sm:col-span-12 smmd:col-span-12 sm:py-8 smmd:py-8 sm:pt-0 smmd:pt-0 py-16">
               <div>
                 <p className=" text-[18px] sm:text-base smmd:text-base text-left pt-4 text-[#686868] ">
@@ -340,7 +340,7 @@ function Home() {
               </div>
             </div>
 
-            <div className=" col-span-4 sm:col-span-12 smmd:col-span-12 h-full">
+            <div className=" col-span-4 sm:col-span-12 smmd:col-span-12 md:col-span-12  h-full">
               <img src={AI_TECH} className="w-full h-full sm:hidden smmd:hidden" />
             </div>
           </div>
@@ -349,7 +349,7 @@ function Home() {
 
       <section id="speaker">
         <div className="  py-16  sm:pt-0 smmd:pt-0 pb-0">
-          <h1 className=" font-semibold text-yellow text-h1 sm:text-h3 smmd:text-h3 pb-4 sm:pb-10 smmd:pb-10">SPEAKERS</h1>
+          <h1 className=" font-semibold text-yellow text-h1 sm:text-h3 md:text-h3 smmd:text-h3 pb-4 sm:pb-10 smmd:pb-10">SPEAKERS</h1>
           <div className="py-10 sm:py-0 smmd:py-0 sm:px-4 smmd:px-4">
             <Speaker />
           </div>
@@ -405,16 +405,16 @@ function Home() {
       <section>
         <Sponser />
       </section>
-      <section id="">
-        <div className=" py-10 pb-8">
+      <section id="" className="md:px-4">
+        <div className=" py-10 pb-8 ">
           <h1 className=" font-semibold sm:text-h3 smmd:text-h3 text-yellow text-h1">
             Frequently Asked Questions
           </h1>
         </div>
 
         <div className="pb-16 sm:px-4 smmd:px-4">
-          <div className=" grid grid-cols-12 sm:grid-cols-1 smmd:grid-cols-1">
-            <div className=" col-span-2 sm:hidden smmd:hidden"></div>
+          <div className=" grid grid-cols-12 sm:grid-cols-1 smmd:grid-cols-1 md:grid-cols-1">
+            <div className=" col-span-2 sm:hidden smmd:hidden md:hidden"></div>
             <div className=" col-span-8  ">
               {faq?.map((v, i) => {
                 return (
