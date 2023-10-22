@@ -277,12 +277,12 @@ function Home() {
           <h1 className=" font-semibold sm:text-h3 smmd:text-h3  text-yellow text-h1 pb-4">
             EVENT INFO
           </h1>
-          <div className=" grid grid-cols-12 sm:grid-cols-1 smmd:grid-cols-1 md:grid-cols-1 py-2 gap-10">
+          <div className=" grid grid-cols-12 sm:grid-cols-1 smmd:grid-cols-1 md:grid-cols-1 py-2 gap-10 sm:gap-0 smmd:gap-0 ">
             <div className=" col-span-4 sm:col-span-12 smmd:col-span-12 md:col-span-12">
               <img src={AI_BRAIN} className=" sm:w-full smmd:w-full" />
             </div>
 
-            <div className=" col-span-8 sm:col-span-12 smmd:col-span-12 md:col-span-12  h-full center">
+            <div className=" col-span-8 sm:col-span-12 smmd:col-span-12 md:col-span-12 sm:pt-10 smmd:pt-10  h-full center">
               <h3 className=" text-h3 sm:text-h5 smmd:text-h5 text-left text-[#4f4f4f] ">
                 <span className=" ml-16">CII </span>is organizing the 7th
                 edition of National Higher Education Conclave (NHEC) with the
@@ -384,7 +384,7 @@ function Home() {
         <div className="pt-0 py-16 sm:pb-0 smmd:pb-0">
           <div className=" ">
 
-            <Expect />
+          <Expect />
           </div>
         </div>
       </section>

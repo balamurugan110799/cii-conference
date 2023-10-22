@@ -15,8 +15,8 @@ export default function Expect() {
             <div className=" text-left sm:text-h3 sm:text-center smmd:text-center smmd:text-h3 pb-6 pt-6 text-yellow text-h1 font-semibold">
               What you can Expect
             </div>
-            <div className=" grid grid-cols-12 sm:grid-cols-12 md:col-span-12  gap-4 sm:gap-10 smmd:gap-10">
-              <div className="col-span-3   sm:col-span-6 smmd:col-span-6">
+            <div className=" grid grid-cols-12 sm:grid-cols-6 smmd:grid-cols-6 sm:px-4 md:col-span-12  gap-4 sm:gap-4 smmd:gap-4">
+              <div className="col-span-3 ">
                 <div className="center shadow rounded-lg bg-primary py-2 ">
                   <div className=" block py-10">
                     <BsKey className="text-yellow text-[64px]" />
@@ -26,7 +26,7 @@ export default function Expect() {
                   Inspiring Keynote Sessions
                 </div>
               </div>
-              <div className="col-span-3   sm:col-span-6 smmd:col-span-6">
+              <div className="col-span-3   ">
                 <div className="center shadow rounded-lg bg-primary py-2 ">
                   <div className=" block py-10">
                     <RiUserStarLine className="text-yellow text-[64px]" />
@@ -36,7 +36,7 @@ export default function Expect() {
                 Thought Leadership
                 </div>
               </div>
-              <div className="col-span-3   sm:col-span-6 smmd:col-span-6">
+              <div className="col-span-3   ">
                 <div className="center shadow rounded-lg bg-primary py-2 ">
                   <div className=" block py-10">
                     <RiCpuLine className="text-yellow text-[64px]" />
@@ -46,7 +46,7 @@ export default function Expect() {
                 Future Technology
                 </div>
               </div>
-              <div className="col-span-3   sm:col-span-6 smmd:col-span-6">
+              <div className="col-span-3   ">
                 <div className="center shadow rounded-lg bg-primary py-2 ">
                   <div className=" block py-10">
                     <RiBaseStationLine className="text-yellow text-[64px]" />
@@ -56,7 +56,7 @@ export default function Expect() {
                 Networking Opportunity
                 </div>
               </div>
-              <div className="col-span-3   sm:col-span-6 smmd:col-span-6">
+              <div className="col-span-3   ">
                 <div className="center shadow rounded-lg bg-primary py-2 ">
                   <div className=" block py-10">
                     <RiSwapBoxLine className="text-yellow text-[64px]" />
@@ -66,7 +66,7 @@ export default function Expect() {
                 Academic Exchange
                 </div>
               </div>
-              <div className="col-span-3   sm:col-span-6 smmd:col-span-6">
+              <div className="col-span-3   ">
                 <div className="center shadow rounded-lg bg-primary py-2 ">
                   <div className=" block py-10">
                     <RiLightbulbFlashLine className="text-yellow text-[64px]" />
