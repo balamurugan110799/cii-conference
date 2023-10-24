@@ -6,12 +6,6 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/free-mode";
 import "swiper/css/pagination";
-import Fifth from "../Components/Asset/Image/Count/Fifth.jpg";
-import Sixth from "../Components/Asset/Image/Count/Sixth.jpg";
-import First from "../Components/Asset/Image/Count/First.png";
-import Second from "../Components/Asset/Image/Count/Second.png";
-import Third from "../Components/Asset/Image/Count/Third.png";
-import Forth from "../Components/Asset/Image/Count/Forth.png";
 
 // import './styles.css';
 
