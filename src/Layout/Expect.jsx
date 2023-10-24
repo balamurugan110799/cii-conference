@@ -9,9 +9,9 @@ import vid from "../Components/Asset/Image/video/VID.mp4"
 export default function Expect() {
   return (
     <div>
-      <div className=" container mx-auto sm:px-4 smmd:px-4">
-        <div className=" grid grid-cols-12 sm:grid-cols-1 smmd:grid-cols-1 md:grid-cols-1 gap-6">
-          <div className=" col-span-7 sm:col-span-12 smmd:col-span-full">
+      <div className=" container mx-auto sm:px-4 smmd:px-4 md:px-4">
+        <div className=" grid grid-cols-12 sm:grid-cols-1 smmd:grid-cols-12 md:grid-cols-12 gap-6">
+          <div className=" col-span-7 sm:col-span-12 smmd:col-span-full md:col-span-full">
             <div className=" text-left sm:text-h3 sm:text-center smmd:text-center smmd:text-h3 pb-6 pt-6 text-yellow text-h1 font-semibold">
               What you can Expect
             </div>
@@ -108,7 +108,7 @@ export default function Expect() {
                   </div>
 
                   <div>
-                      <video  poster={CII} className="mx-auto h-[200px] sm:h-[120px] smmd:h-[120px] sm:mt-2 smmd:mt-2" autoPlay controls>
+                      <video  poster={CII} className="mx-auto h-[200px] sm:h-[200px] smmd:h-[200px] sm:mt-2 smmd:mt-2" autoPlay controls>
                         {/* <source src={vid}  type="video/mp4" /> */}
                       </video>
                     </div>

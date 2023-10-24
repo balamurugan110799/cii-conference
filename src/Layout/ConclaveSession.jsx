@@ -44,8 +44,8 @@ export default function ConclaveSession() {
             <div className="text-left sm:text-h4 smmd:text-h4 font-semibold text-[30px] pt-4 text-primary">
               Panel Discussion on
             </div>
-            <div className=" grid grid-cols-12 pt-3">
-              <div className=" col-span-2"></div>
+            <div className=" grid grid-cols-12 pt-3 md:grid-cols-12 sm:grid-cols-12 smmd:grid-cols-12">
+              <div className=" col-span-2  sm:hidden smmd:hidden "></div>
               <div className=" col-span-8">
                 <div className=" flex">
                   <FaLocationArrow className="mt-2 text-primary" />

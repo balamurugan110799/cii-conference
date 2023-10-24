@@ -8,10 +8,11 @@ import Slider from "./Slider";
 function Footer() {
   return (
     <div className="bg-[#e6e6e6] py-16">
-      <div className="  py-16 sm:py-0">
+      <div className="  py-16 sm:py-0 md:px-4 What you can Expect
+">
         <div className=" container mx-auto sm:px-4 smmd:px-4">
-          <div id="contact-us" className=" grid grid-cols-12 gap-10 sm:grid-cols-1  md:grid-cols-1 smmd:grid-cols- 1">
-            <div className=" col-span-5">
+          <div id="contact-us" className=" grid grid-cols-12 gap-10 sm:grid-cols-full sm:gap-4 smmd:gap-4  md:grid-cols-12 smmd:grid-cols-full">
+            <div className=" col-span-5 sm:col-span-full md:col-span-full smmd:col-span-full">
               <h3 className=" text-h3 sm:text-h5 smmd:text-h5 text-primary font-semibold text-left">
                 Confederation of Indian Industry Coimbatore
               </h3>
@@ -20,8 +21,8 @@ function Footer() {
                 us
               </p>
             </div>
-            <div className=" col-span-7">
-              <div className=" grid grid-cols-2">
+            <div className=" col-span-7 sm:col-span-12 smmd:col-span-12 md:col-span-12">
+              <div className=" grid grid-cols-2  sm:grid-cols-1 smmd:grid-cols-1 sm:gap-6 smmd:gap-6">
                 <div>
                   <p className=" text-[16px] text-primary font-semibold text-left pt-1 pb-2">
                     {" "}

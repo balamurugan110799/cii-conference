@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import AI from "../Components/Asset/Image/Home/AI.png";
 import AIG from "../Components/Asset/Image/Home/AI_BRAN.png";
 import AI_BRAIN from "../Components/Asset/Image/Home/4402944_18296.jpg";
+import AI_BRAINMobile from "../Components/Asset/Image/Home/mobile-view.png";
+
 import AI_TECH from "../Components/Asset/Image/Home/4546131_3922.jpg";
 import { IoIosArrowDown } from "react-icons/io";
 import CII from "../Components/Asset/Image/Home/CII_Logo.png";
@@ -14,6 +16,7 @@ import PreviousEditions from "../Layout/Previous-Editions";
 import ConclaveSession from "../Layout/ConclaveSession";
 import Expect from "../Layout/Expect";
 import Sponser from "../Layout/Sponser";
+import Gallery from "../Layout/Gallery";
 
 // import {SVG} from "../Components/SVG/rrreplicate.svg"
 
@@ -161,7 +164,7 @@ function Home() {
     <div>
       <section className=" ">
         <div className=" relative ">
-          <div className=" absolute top-0 h-[100vh]  w-full">
+          <div className=" absolute md:bottom-[0%] top-0 h-[100vh]  w-full">
             {/* <div className="bg-[#c29729c7]  cursor-pointer title w-full py-2 text-h1  hover:bg-[#c2a55b]  text-white tracking-wider center px-10">
               National Higher Education Conclave 2023 7th - Edition
             </div> */}
@@ -208,7 +211,7 @@ function Home() {
                 </div>
               </div>
             </div>
-            <div className=" container mx-auto sm:px-4">
+            <div className=" container mx-auto sm:px-4 smmd:px-4 md:px-4">
               <div className=" grid  grid-cols-2 sm:grid-cols-1 smmd:grid-cols-1 md:grid-cols-1 md:pt-2">
                 <div>
                   <div className="">
@@ -265,14 +268,15 @@ function Home() {
               </div>
             </div>
           </div>
+          <img src={AI_BRAINMobile} className=" h-[100vh] lg:hidden desktop md:hidden object-cover w-full" />
 
-          <img src={AIG} className=" h-[100vh]  object-cover w-full" />
+          <img src={AIG} className=" h-[100vh] sm:hidden smmd:hidden  object-cover w-full" />
         </div>
       </section>
 
       <div></div>
 
-      <section id="event-info" className=" container mx-auto sm:px-4 smmd:px-4">
+      <section id="event-info" className=" container mx-auto sm:px-4 smmd:px-4 md:px-4">
         <div className=" py-16  sm:pb-10 smmd:pb-10">
           <h1 className=" font-semibold sm:text-h3 smmd:text-h3  text-yellow text-h1 pb-4">
             EVENT INFO
@@ -296,8 +300,8 @@ function Home() {
             </div>
           </div>
 
-          <div className=" grid grid-cols-12 sm:grid-cols-1 smmd:grid-cols-1 md:grid-cols-1 pt-8 gap-6">
-            <div className=" col-span-8 sm:col-span-12 smmd:col-span-12 sm:py-8 smmd:py-8 sm:pt-0 smmd:pt-0 py-16">
+          <div className=" grid grid-cols-12 sm:grid-cols-1 smmd:grid-cols-12 md:grid-cols-full pt-8 gap-6">
+            <div className=" col-span-8 sm:col-span-12 smmd:col-span-12 md:col-span-full sm:py-8 smmd:py-8 sm:pt-0 smmd:pt-0 py-16 md:pt-0">
               <div>
                 <p className=" text-[18px] sm:text-base smmd:text-base text-left pt-4 text-[#686868] ">
                   <span> Technology</span> adoption in higher education has
@@ -349,7 +353,7 @@ function Home() {
 
       <section id="speaker">
         <div className="  py-16  sm:pt-0 smmd:pt-0 pb-0">
-          <h1 className=" font-semibold text-yellow text-h1 sm:text-h3 md:text-h3 smmd:text-h3 pb-4 sm:pb-10 smmd:pb-10">SPEAKERS</h1>
+          <h1 className=" font-semibold text-yellow text-h1 sm:text-h3  smmd:text-h3 pb-4 sm:pb-10 smmd:pb-10">SPEAKERS</h1>
           <div className="py-10 sm:py-0 smmd:py-0 sm:px-4 smmd:px-4">
             <Speaker />
           </div>
@@ -357,13 +361,12 @@ function Home() {
 
       </section>
 
-      <section className=" ">
+      <section className=" md:px-4">
         <div className="pt-0 py-16">
           <div className=" pt-6">
             <h1 className=" font-semibold text-yellow text-h1 sm:pt-10 smmd:pt-10 sm:pb-0 smmd:pb-0 sm:text-h3 smmd:text-h3 pb-10">
               CONCLAVE SESSION
             </h1>
-
             <ConclaveSession />
           </div>
         </div>
@@ -395,8 +398,20 @@ function Home() {
             <h1 className=" font-semibold text-white  sm:text-h3 smmd:text-h3 text-h1 pb-10">
               PREVIOUS EDITIONS
             </h1>
-
             <PreviousEditions />
+          </div>
+        </div>
+      </section>
+
+
+      <section className=" bg-white sm:px-4 smmd:px-4">
+        <div className="py-16 pb-4">
+          <div className=" pt-6">
+            <h1 className=" font-semibold text-yellow  sm:text-h3 smmd:text-h3 text-h1 pb-10">
+             GALLERY
+            </h1>
+            <Gallery/>
+           
           </div>
         </div>
       </section>
