@@ -257,7 +257,7 @@ function Home() {
             </div>
             <div className="">
             <div className=" grid grid-cols-12 md:grid-col-full sm:grid-col-full smmd:grid-col-full gap-10">
-              <div className=" col-span-6 md:mx-4 sm:mx-4   smmd:mx-4 md:col-span-full sm:col-span-full smmd:col-span-full bg-[#033c89c7]  md:p-4 p-10 sm:p-4 smmd:p-4 border-yellow-header">
+              <div className=" col-span-6 md:mx-4 sm:mx-4  sm:hidden smmd:hidden  smmd:mx-4 md:col-span-full sm:col-span-full smmd:col-span-full bg-[#033c89c7]  md:p-4 p-10 sm:p-4 smmd:p-4 border-yellow-header">
               {/* bg-[#033c89c7] */}
                     <div className=" text-left text-white tracking-wide text-[30px] md:text-[24px] sm:text-[24px] smmd:text-[24px] leading-[38px]  font-semibold ">National Higher Education Conclave 2023 7th- Edition</div>
               <div className=" text-left text-yellow tracking-wide sm:hidden smmd:hidden sm:pt-0 smmd:pt-0 md:pt-0  pt-4 text-[20px] sm:text-[18px] smmd:text-[18px]  font-semibold ">
