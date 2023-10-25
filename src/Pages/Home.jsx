@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import AI from "../Components/Asset/Image/Home/AI.png";
 import AIG from "../Components/Asset/Image/Home/AI_BRAN.png";
 import AI_BRAIN from "../Components/Asset/Image/Home/4402944_18296.jpg";
@@ -7,20 +7,27 @@ import AI_BRAINMobile from "../Components/Asset/Image/Home/mobile-view.png";
 import AI_TECH from "../Components/Asset/Image/Home/4546131_3922.jpg";
 import { IoIosArrowDown } from "react-icons/io";
 import CII from "../Components/Asset/Image/Home/CII_Logo.png";
+import NHEC from "../Components/Asset/Image/Home/NHEC.png";
 import SVG from "../Layout/SVG";
 import Abhilash from "../Components/Asset/Image/Speakers/Abhilash Misra.png";
 import Nandini from "../Components/Asset/Image/Speakers/Dr R Nandini.png";
 import Shankar from "../Components/Asset/Image/Speakers/Mr Shankar Vanavarayar.png";
 import Speaker from "../Layout/Speaker";
 import PreviousEditions from "../Layout/Previous-Editions";
+import { BsPlayCircleFill, BsFillPauseFill } from "react-icons/bs";
+// import { BiSolidTimeFive } from "react-icons/bi";
+import { HiLocationMarker, HiClock } from "react-icons/hi";
 import ConclaveSession from "../Layout/ConclaveSession";
 import Expect from "../Layout/Expect";
 import Sponser from "../Layout/Sponser";
 import Gallery from "../Layout/Gallery";
+import vid from "../Components/Asset/Image/video/VID.mp4";
+import CIIE from "../Components/Asset/Image/Home/Background.png";
 
 // import {SVG} from "../Components/SVG/rrreplicate.svg"
 
 function Home() {
+  const [controlVideo, setVideoControl] = useState(false);
   const [faq, setFAQ] = useState([
     {
       id: 0,
@@ -149,6 +156,20 @@ function Home() {
     username: "",
   });
 
+  const handleVideoContoller = () => {
+    var ciiVideo = document.getElementById("video");
+
+    if (ciiVideo.paused) {
+      ciiVideo.play();
+    } else {
+      ciiVideo.pause();
+    }
+    setVideoControl(!controlVideo);
+  };
+
+  useEffect(()=>{
+  },[])
+
   // const handleKeypressEvent = (e) => {
   //   console.log(e);
   //   data.username = "hello";
@@ -163,23 +184,23 @@ function Home() {
   return (
     <div>
       <section className=" ">
-        <div className=" relative ">
-          <div className=" absolute md:bottom-[0%] top-0 h-[100vh]  w-full">
+        <div className=" relative sm:h-auto smmd:h-auto">
+          <div className=" absolute md:bottom-[0%] top-0 h-[100vh] sm:h-auto md:h-auto w-full">
             {/* <div className="bg-[#c29729c7]  cursor-pointer title w-full py-2 text-h1  hover:bg-[#c2a55b]  text-white tracking-wider center px-10">
               National Higher Education Conclave 2023 7th - Edition
             </div> */}
 
-            <div className="  py-6">
+            <div className="  py-6 sm:py-0 smmd:py-0">
               <div className=" container mx-auto">
                 <div className="grid grid-cols-12 gap-4 sm:grid-cols-1 smmd:grid-cols-1 md:grid-cols-1 ">
                   <div className="sm:col-span-12 col-span-2">
-                    <img
+                    {/* <img
                       src={CII}
                       alt="CII"
-                      className=" object-cover h-[80px]"
-                    />
+                      className="z-50 object-cover h-[80px]"
+                    /> */}
                   </div>
-                  <div className=" col-span-10 sm:hidden smmd:hidden md:hidden ">
+                  {/* <div className=" col-span-10 sm:hidden smmd:hidden md:hidden ">
                     <div className="flex justify-end  py-7">
                       <div className=" title text-base font-medium hover:text-yellow duration-300 text-white pr-10 tracking-wider cursor-pointer">
                         HOME
@@ -207,11 +228,11 @@ function Home() {
 
                       <div></div>
                     </div>
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </div>
-            <div className=" container mx-auto sm:px-4 smmd:px-4 md:px-4">
+            {/* <div className=" container mx-auto sm:px-4 smmd:px-4 md:px-4">
               <div className=" grid  grid-cols-2 sm:grid-cols-1 smmd:grid-cols-1 md:grid-cols-1 md:pt-2">
                 <div>
                   <div className="">
@@ -253,7 +274,6 @@ function Home() {
                       </div>
                       <div></div>
 
-
                       <div className=" text-secondary sm:pt-10 smmd:pt-10 text-left">
                         *fee applicable
                       </div>
@@ -266,24 +286,206 @@ function Home() {
                 </div>
                 <div className=""></div>
               </div>
-            </div>
+            </div> */}
           </div>
-          <img src={AI_BRAINMobile} className=" h-[100vh] lg:hidden desktop md:hidden object-cover w-full" />
 
-          <img src={AIG} className=" h-[100vh] sm:hidden smmd:hidden  object-cover w-full" />
+          <button
+            onClick={() => handleVideoContoller()}
+            class=" absolute w-[100%] mx-auto h-full top-0 left-0 bg-[#0000007a]   z-40"
+          >
+            {/* <div className=" text-white  number-font text-[100px]">CII</div> */}
+            <div className="grid grid-cols-12 gap-4 sm:grid-cols-1 smmd:grid-cols-1 md:grid-cols-1 ">
+              <div className="sm:col-span-12 col-span-2">
+                <div className=" flex z-50 top-0 py-10 sm:py-0 smmd:py-0 absolute left-10">
+                  <div className>
+                    <img
+                      src={CII}
+                      alt="CII"
+                      className="z-50 sm:h-[50px] smmd:h-[50px]  h-[100px] md:h-[80px] pr-4 object-cover "
+                    />
+                  </div>
+                  <div>
+                    <img
+                      src={NHEC}
+                      alt="CII"
+                      className="z-50 sm:h-[50px] smmd:h-[50px] h-[100px] md:h-[80px] object-cover "
+                    />
+                  </div>
+                </div>
+              </div>
+              <div className=" top-0 py-16 right-0 absolute col-span-10 sm:hidden smmd:hidden md:hidden ">
+                <div className="flex justify-end  py-7">
+                  <div className=" title text-base  font-bold tracking-widest hover:text-yellow duration-300 text-white pr-10 cursor-pointer">
+                    HOME
+                  </div>
+                  <a href="#event-info">
+                    <div className="title center text-base font-bold hover:text-yellow duration-300 text-white px-10 tracking-widest cursor-pointer">
+                      EVENT INFO
+                    </div>
+                  </a>
+                  <a href="#speaker">
+                    <div className="title  text-base font-bold hover:text-yellow duration-300 text-white px-10 tracking-widest cursor-pointer">
+                      SPEAKER
+                    </div>
+                  </a>
+                  <a href="#sponsors">
+                    <div className=" title text-base font-bold hover:text-yellow duration-300 text-white px-10 tracking-widest cursor-pointer">
+                      SPONSORS
+                    </div>
+                  </a>
+                  <a href="#contact-us">
+                    <div className="title  text-base font-bold hover:text-yellow duration-300 text-white px-10 tracking-widest cursor-pointer">
+                      CONTACT US
+                    </div>
+                  </a>
+
+                  <div></div>
+                </div>
+              </div>
+            </div>
+            
+            <div className=" text-[100px] sm:text-[30px] smmd:text-[30px] md:text-[50px] cii-font text-white">CII - Conference </div>
+            {controlVideo ? null : (
+              <div
+                onClick={() => handleVideoContoller()}
+                className=" "
+              >
+                
+                {" "}
+                {/* <div className=" border-4 group-hover:border-white p-2 sm:p-[1px] smmd:p-[1px] md:p-[1px] border-yellow rounded-[50%]">
+                  <BsPlayCircleFill className=" text-yellow text-[80px] sm:text-[40px] md:text-[40px] smmd:text-[40px] rounderd-[50%] p-1 px-2 group-hover:text-white duration-3000" /> */}
+                  
+                {/* </div>{" "} */}
+              </div>
+            )}
+          </button>
+          <video
+            poster={CIIE}
+            className="mx-auto h-full w-full   sm:h-auto smmd:h-auto sm:mt-2 smmd:mt-2"
+            id="video"
+            preload="auto"
+            loop
+            autoPlay
+          >
+            <source src={vid} type="video/mp4" />
+          </video>
+
+          {/* <img
+            src={AI_BRAINMobile}
+            className=" h-[100vh] lg:hidden desktop md:hidden object-cover w-full"
+          />
+
+          <img
+            src={AIG}
+            className=" h-[100vh] sm:hidden smmd:hidden  object-cover w-full"
+          /> */}
         </div>
       </section>
 
       <div></div>
 
-      <section id="event-info" className=" container mx-auto sm:px-4 smmd:px-4 md:px-4">
+      <section
+        id="event-info"
+        className=" container mx-auto sm:px-4 smmd:px-4 md:px-4"
+      >
         <div className=" py-16  sm:pb-10 smmd:pb-10">
           <h1 className=" font-semibold sm:text-h3 smmd:text-h3  text-yellow text-h1 pb-4">
             EVENT INFO
           </h1>
-          <div className=" grid grid-cols-12 sm:grid-cols-1 smmd:grid-cols-1 md:grid-cols-1 py-2 gap-10 sm:gap-0 smmd:gap-0 ">
+          <div></div>
+
+          <div className=" container mx-auto  md:px-4">
+            <div className=" grid  grid-cols-12 sm:grid-cols-full smmd:grid-cols-full md:grid-cols-12 md:pt-2 gap-4">
+              <div className=" col-span-4 sm:col-span-full smmd:col-span-full md:col-span-full ">
+                <div className="bg-primary rounded-lg p-10">
+                  <div className=" mx-auto">
+                    {/* <div className="text-white font-semibold title text-left py-4 pt-0 pb-2 text-h4 sm:text-h4 smmd:text-h4 ">
+                      National Higher Education Conclave 2023{" "}
+                      <span className=" text-primary">7th - Edition</span>
+                    </div>
+                    <h2 className=" text-h2 text-left sm:text-h5  font-semibold smmd:text-h5 text-white pb-4">
+                      Artificial Intelligence & Educational Technology for
+                      Transforming Higher Education
+                    </h2> */}
+                    <div className=" grid grid-cols-full py-4">
+                      <div>
+                        <div className=" text-white title text-h4 pb-2 sm:text-h5  smmd:text-h5 text-left font-semibold">
+                          VENUE
+                        </div>
+                        <p className=" text-h6 text-white sm:text-h6 smmd:text-h6 text-left">
+                          Hotel Le Meridien
+                        </p>
+                        <p className=" text-h6 text-white sm:text-h6 smmd:text-h6 text-left">
+                          Neelambur, Coimbatore{" "}
+                        </p>
+                        <p className=" text-h6 text-white sm:text-h6 smmd:text-h6 text-left">
+                          Tamilnadu, India - 641062
+                        </p>
+                      </div>
+                      <div>
+                        <div className="  pt-4 text-white pb-2 title text-h4 sm:text-h5 smmd:text-h5 text-left font-semibold">
+                          DATE AND TIME
+                        </div>
+                        <p className=" text-h6 text-white sm:text-h6 smmd:text-h6 text-left">
+                          November <sup>2nd </sup> 2023
+                        </p>
+                        <p className=" text-h6 text-white sm:text-h6 smmd:text-h6 text-left">
+                          9.30 a.m to 6.00 p.m
+                        </p>
+                      </div>
+                    </div>
+                    <div></div>
+
+                    <div className=" text-white sm:pt-10 smmd:pt-10 text-left">
+                      *fee applicable
+                    </div>
+                    <a
+                      href="https://cam.mycii.in/OR/OnlineRegistrationLogin.html?EventId=E000062816"
+                      target="_blank"
+                    >
+                      <div className="py-2 my-2 px-10 sm:text-h4 smmd:text-h4 mx-auto text-h2 shadow hover:text-primary  bg-yellow hover:bg-yellow cursor-pointer duration-300 rounded-lg font-semibold title tracking-wider text-white">
+                        Register now!
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div className=" col-span-8  sm:col-span-full smmd:col-span-full md:col-span-full py-4 px-8 sm:px-0 smmd:px-0 md:px-0 md:pb-0">
+                <div className=" grid grid-cols-12 sm:grid-cols-1 smmd:grid-cols-1 md:grid-cols-1 py-2 gap-10 sm:gap-0 smmd:gap-0 ">
+                  <div className=" col-span-12 sm:col-span-12 smmd:col-span-12 md:col-span-12">
+                    <img
+                      src={AI_BRAIN}
+                      className=" h-[200px]  sm:w-full smmd:w-full md:mx-auto"
+                    />
+
+                    <div>
+                      <a href="#" class="playBut"></a>
+                    </div>
+                  </div>
+
+                  <div className=" col-span-12 sm:col-span-12 smmd:col-span-12 md:col-span-12 sm:pt-10 smmd:pt-10  h-full center">
+                    <h3 className=" text-h3 sm:text-h5 text-justify smmd:text-h5  text-[#4f4f4f] ">
+                      <span className=" ">CII </span>is organizing the 7th
+                      edition of National Higher Education Conclave (NHEC) with
+                      the theme,{" "}
+                      <span className="  text-primary  font-semibold">
+                        “Artificial Intelligence and Educational Technology for
+                        Transforming Higher Education”
+                      </span>{" "}
+                      on 02 November 2023 at Hotel Le Meridien, Coimbatore.
+                    </h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          {/* <div className=" grid grid-cols-12 sm:grid-cols-1 smmd:grid-cols-1 md:grid-cols-1 py-2 gap-10 sm:gap-0 smmd:gap-0 ">
             <div className=" col-span-4 sm:col-span-12 smmd:col-span-12 md:col-span-12">
               <img src={AI_BRAIN} className=" sm:w-full smmd:w-full" />
+
+              <div>
+                <a href="#" class="playBut"></a>
+              </div>
             </div>
 
             <div className=" col-span-8 sm:col-span-12 smmd:col-span-12 md:col-span-12 sm:pt-10 smmd:pt-10  h-full center">
@@ -298,12 +500,12 @@ function Home() {
                 on 02 November 2023 at Hotel Le Meridien, Coimbatore.
               </h3>
             </div>
-          </div>
+          </div> */}
 
           <div className=" grid grid-cols-12 sm:grid-cols-1 smmd:grid-cols-12 md:grid-cols-full pt-8 gap-6">
             <div className=" col-span-8 sm:col-span-12 smmd:col-span-12 md:col-span-full sm:py-8 smmd:py-8 sm:pt-0 smmd:pt-0 py-16 md:pt-0">
               <div>
-                <p className=" text-[18px] sm:text-base smmd:text-base text-left pt-4 text-[#686868] ">
+                <p className=" text-[18px] sm:text-base text-justify smmd:text-base pt-4 text-[#686868] ">
                   <span> Technology</span> adoption in higher education has
                   advanced significantly in many ways and technology is poised
                   to drive delivery of higher education in the future. In
@@ -322,7 +524,7 @@ function Home() {
 
               <div>
                 <div>
-                  <p className=" text-[18px]  sm:text-base smmd:text-base text-left pt-4 text-[#686868] ">
+                  <p className=" text-[18px]  text-justify sm:text-base smmd:text-base  pt-4 text-[#686868] ">
                     Accordingly, NHEC will provide an opportunity for
                     constructive dialogues and deliberation among all the
                     stakeholders, including the industry, in the education
@@ -345,7 +547,10 @@ function Home() {
             </div>
 
             <div className=" col-span-4 sm:col-span-12 smmd:col-span-12 md:col-span-12  h-full">
-              <img src={AI_TECH} className="w-full h-full sm:hidden smmd:hidden" />
+              <img
+                src={AI_TECH}
+                className="w-full h-full sm:hidden smmd:hidden"
+              />
             </div>
           </div>
         </div>
@@ -353,12 +558,13 @@ function Home() {
 
       <section id="speaker">
         <div className="  py-16  sm:pt-0 smmd:pt-0 pb-0">
-          <h1 className=" font-semibold text-yellow text-h1 sm:text-h3  smmd:text-h3 pb-4 sm:pb-10 smmd:pb-10">SPEAKERS</h1>
+          <h1 className=" font-semibold text-yellow text-h1 sm:text-h3  smmd:text-h3 pb-4 sm:pb-10 smmd:pb-10">
+            SPEAKERS
+          </h1>
           <div className="py-10 sm:py-0 smmd:py-0 sm:px-4 smmd:px-4">
             <Speaker />
           </div>
         </div>
-
       </section>
 
       <section className=" md:px-4">
@@ -378,7 +584,6 @@ function Home() {
           // onKeyDown={(e) => handleKeyDown(e)}
           // onKeyUp={(e) => handleKeyUp(e)}
           id="keydown"
-
         />
         <input type="text" value={data.username} disbled />
       </div>
@@ -386,8 +591,7 @@ function Home() {
       <section className="pb-10 ">
         <div className="pt-0 py-16 sm:pb-0 smmd:pb-0">
           <div className=" ">
-
-          <Expect />
+            <Expect />
           </div>
         </div>
       </section>
@@ -403,19 +607,72 @@ function Home() {
         </div>
       </section>
 
+      <section className=" backgrond py-8 sm:py-12 smmd:py-12 w-full sm:px-4 smmd:px-4">
+        <div className=" py-4">
+          <div className=" container mx-auto">
+            <div className=" grid grid-cols-12  smmd:grid-cols-12 sm:grid-cols-full">
+              <div className=" col-span-8 sm:col-span-full smmd:col-span-full md:col-span-full">
+                <h4 className=" text-white text-h2 text-left">
+                  National Higher Education Conclave 2023 <sup>7th</sup>-
+                  Edition
+                </h4>
+                <h4 className=" text-white text-h4 text-left">
+                  Artificial Intelligence & Educational Technology for
+                  Transforming Higher Education
+                </h4>
+                <div>
+                  <div className=" grid grid-cols-2 py-4 sm:pt-8 smmd:pt-8">
+                    <div className=" text-white  text-left">
+                      {" "}
+                      <div className=" bg-primary  mb-2 rounded-lg center h-[40px] w-[40px]">
+                        <HiLocationMarker className=" text-h2 text-yellow" />
+                      </div>
+                      <div>
+                        Hotel Le Meridien, Coimbatore, <br /> Neelambur,
+                        Tamilnadu, India - 641062
+                      </div>
+                    </div>{" "}
+                    <div className=" text-white  text-left">
+                      {" "}
+                      <div className=" bg-primary  mb-2 rounded-lg center h-[40px] w-[40px]">
+                        <HiClock className=" text-h2 text-yellow" />
+                      </div>
+                      <div>November <sup>2nd</sup> <br/> 2023 9.30 a.m  to 6.00 p.m</div>
+                    </div>{" "}
+                  </div>
+                </div>
+                <div></div>
+              </div>
+              <div className=" col-span-4 sm:col-span-full smmd:col-span-full md:col-span-full h-full relative">
+                <div className=" absolute sm:relative smmd:relative md:relative bottom-0 w-full">
+                  <div className=" text-white sm:pt-4 smmd:pt-4 text-left">
+                    *fee applicable
+                  </div>
+                  <a
+                    href="https://cam.mycii.in/OR/OnlineRegistrationLogin.html?EventId=E000062816"
+                    target="_blank"
+                  >
+                    <div className="py-2 my-2 px-10 sm:text-h4 smmd:text-h4 mx-auto text-h2 shadow hover:text-primary  bg-yellow hover:bg-yellow cursor-pointer duration-300 rounded-lg font-semibold title tracking-wider text-white">
+                      Register now!
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <section className=" bg-white sm:px-4 smmd:px-4">
         <div className="py-16 pb-4">
           <div className=" pt-6">
             <h1 className=" font-semibold text-yellow  sm:text-h3 smmd:text-h3 text-h1 pb-10">
-             GALLERY
+              GALLERY
             </h1>
-            <Gallery/>
-           
+            <Gallery />
           </div>
         </div>
       </section>
-
 
       <section>
         <Sponser />
@@ -436,15 +693,17 @@ function Home() {
                   <div key={i}>
                     <div
                       onClick={() => handleFaq(v, i)}
-                      className={`${v?.status === true
+                      className={`${
+                        v?.status === true
                           ? "border-primary text-primary"
                           : "border-secondary text-[#6d6d6d] mb-2"
-                        } cursor-pointer duration-3000 text-left px-10 relative border-2  sm:text-h5 smmd:text-h5  py-2 text-h4 rounded-[10px] `}
+                      } cursor-pointer duration-3000 text-left px-10 relative border-2  sm:text-h5 smmd:text-h5  py-2 text-h4 rounded-[10px] `}
                     >
                       {v?.question}
                       <div
-                        className={` ${v?.status === true ? "rotate-180" : "rotate-0	"
-                          } duration-500 absolute right-0 top-0 p-3 `}
+                        className={` ${
+                          v?.status === true ? "rotate-180" : "rotate-0	"
+                        } duration-500 absolute right-0 top-0 p-3 `}
                       >
                         <IoIosArrowDown />
                       </div>
