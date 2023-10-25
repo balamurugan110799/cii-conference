@@ -291,7 +291,7 @@ function Home() {
 
           <button
             onClick={() => handleVideoContoller()}
-            class=" absolute w-[100%] mx-auto h-full top-0 left-0 bg-[#0000007a]   z-40"
+            class=" absolute w-[100%] mx-auto h-full top-0 left-0 bg-[#033c89a3]   z-40"
           >
             {/* <div className=" text-white  number-font text-[100px]">CII</div> */}
             <div className="grid grid-cols-12 gap-4 sm:grid-cols-1 smmd:grid-cols-1 md:grid-cols-1 ">
@@ -343,8 +343,37 @@ function Home() {
                 </div>
               </div>
             </div>
+            <div className="">
+            <div className=" grid grid-cols-12 md:grid-col-full sm:grid-col-full smmd:grid-col-full gap-10">
+              <div className=" col-span-6 md:mx-4 sm:mx-4 smmd:mx-4 md:col-span-full sm:col-span-full smmd:col-span-full bg-[#033c89c7]  md:p-4 p-10 sm:p-4 smmd:p-4 border-yellow-header">
+              {/* bg-[#033c89c7] */}
+                    <div className=" text-left text-white tracking-wide text-[30px] sm:text-[24px] smmd:text-[24px] leading-[38px]  font-semibold ">National Higher Education Conclave 2023 7th- Edition</div>
+              <div className=" text-left text-yellow tracking-wide  pt-4 text-[20px] sm:text-[18px] smmd:text-[18px]  font-semibold ">
+              Artificial Intelligence & Educational Technology for Transforming Higher Education
+              </div>
+              </div>
+              <div className=" col-span-6 md:col-span-full  sm:col-span-full smmd:col-span-full center">
+              {controlVideo ? null : (
+              <div
+                onClick={() => handleVideoContoller()}
+                className="pulse-animation "
+              >
+                
+                {" "}
+                <div className=" border-4 group-hover:border-white p-2 sm:p-[1px] smmd:p-[1px] md:p-[1px] border-yellow rounded-[50%]">
+                  <BsPlayCircleFill className=" text-yellow text-[70px] sm:text-[40px] md:text-[40px] smmd:text-[40px] rounderd-[50%] p-1 px-2 group-hover:text-white duration-3000" />
+                  </div>
+                  
+               
+              </div>
+            )}
+              </div>
+
+            </div>
+            </div>
+       
             
-            <div className=" text-[100px] sm:text-[30px] smmd:text-[30px] md:text-[50px] cii-font text-white">CII - Conference </div>
+            {/* <div className=" text-[100px] sm:text-[30px] smmd:text-[30px] md:text-[50px] cii-font text-white">CII - Conference </div> */}
             {controlVideo ? null : (
               <div
                 onClick={() => handleVideoContoller()}
@@ -361,7 +390,7 @@ function Home() {
           </button>
           <video
             poster={CIIE}
-            className="mx-auto h-full w-full   sm:h-auto smmd:h-auto sm:mt-2 smmd:mt-2"
+            className="mx-auto h-full w-full   sm:h-auto smmd:h-auto"
             id="video"
             preload="auto"
             loop

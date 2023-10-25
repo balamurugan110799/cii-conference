@@ -108,9 +108,9 @@ export default function Expect() {
                   </div>
 
                   <div>
-                      <video  poster={CII} className="mx-auto h-[200px] sm:h-auto smmd:h-auto sm:mt-2 smmd:mt-2" autoPlay loop controls>
+                      {/* <video  poster={CII} className="mx-auto h-[200px] sm:h-auto smmd:h-auto sm:mt-2 smmd:mt-2" autoPlay loop controls>
                         <source src={vid}  type="video/mp4" />
-                      </video>
+                      </video> */}
                     </div>
                 </div>
               </div>
