@@ -14,7 +14,7 @@ function Footer() {
           <div id="contact-us" className=" grid grid-cols-12 gap-10 sm:grid-cols-full sm:gap-4 smmd:gap-4  md:grid-cols-12 smmd:grid-cols-full">
             <div className=" col-span-5 sm:col-span-full md:col-span-full smmd:col-span-full">
               <h3 className=" text-h3 sm:text-h5 smmd:text-h5 text-primary font-semibold text-left">
-                Confederation of Indian Industry Coimbatore
+                Confederation of Indian Industry - Coimbatore
               </h3>
               <p className=" text-h5 text-[#6d6d6d] sm:text-base smmd:text-base text-left pt-1">
                 For inquiries or to register for the event, please reach out to

@@ -637,20 +637,19 @@ function Home() {
       </section>
 
       <section className=" backgrond py-8 sm:py-12 smmd:py-12 w-full sm:px-4 smmd:px-4">
-        <div className=" py-4">
+        <div className=" py-10">
           <div className=" container mx-auto">
             <div className=" grid grid-cols-12  smmd:grid-cols-12 sm:grid-cols-full">
               <div className=" col-span-8 sm:col-span-full smmd:col-span-full md:col-span-full">
                 <h4 className=" text-white text-h2 text-left">
-                  National Higher Education Conclave 2023 <sup>7th</sup>-
-                  Edition
+                To Enhance your Knowledge on “Artificial Intelligence & Educational Technology for Transforming Higher Education”
                 </h4>
-                <h4 className=" text-white text-h4 text-left">
+                {/* <h4 className=" text-white text-h4 text-left">
                   Artificial Intelligence & Educational Technology for
                   Transforming Higher Education
-                </h4>
+                </h4> */}
                 <div>
-                  <div className=" grid grid-cols-2 py-4 sm:pt-8 smmd:pt-8">
+                  {/* <div className=" grid grid-cols-2 py-4 sm:pt-8 smmd:pt-8">
                     <div className=" text-white  text-left">
                       {" "}
                       <div className=" bg-primary  mb-2 rounded-lg center h-[40px] w-[40px]">
@@ -668,13 +667,13 @@ function Home() {
                       </div>
                       <div>November <sup>2nd</sup> <br/> 2023 9.30 a.m  to 6.00 p.m</div>
                     </div>{" "}
-                  </div>
+                  </div> */}
                 </div>
                 <div></div>
               </div>
               <div className=" col-span-4 sm:col-span-full smmd:col-span-full md:col-span-full h-full relative">
                 <div className=" absolute sm:relative smmd:relative md:relative bottom-0 w-full">
-                  <div className=" text-white sm:pt-4 smmd:pt-4 text-left">
+                  <div className=" text-secondary  text-sm sm:pt-4 smmd:pt-4 text-left">
                     *fee applicable
                   </div>
                   <a
@@ -682,7 +681,7 @@ function Home() {
                     target="_blank"
                   >
                     <div className="py-2 my-2 px-10 sm:text-h4 smmd:text-h4 mx-auto text-h2 shadow hover:text-primary  bg-yellow hover:bg-yellow cursor-pointer duration-300 rounded-lg font-semibold title tracking-wider text-white">
-                      Register now!
+                    Reserve Your Spot
                     </div>
                   </a>
                 </div>
