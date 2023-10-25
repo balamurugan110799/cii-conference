@@ -184,114 +184,26 @@ function Home() {
   return (
     <div>
       <section className=" ">
-        <div className=" relative sm:h-auto smmd:h-auto">
-          <div className=" absolute md:bottom-[0%] top-0 h-[100vh] sm:h-auto md:h-auto w-full">
-            {/* <div className="bg-[#c29729c7]  cursor-pointer title w-full py-2 text-h1  hover:bg-[#c2a55b]  text-white tracking-wider center px-10">
-              National Higher Education Conclave 2023 7th - Edition
-            </div> */}
+        <div className=" relative ">
+          <div className=" absolute md:bottom-[0%] top-0 h-[100vh]  md:h-[100vh] w-full">
+          
 
             <div className="  py-6 sm:py-0 smmd:py-0">
               <div className=" container mx-auto">
                 <div className="grid grid-cols-12 gap-4 sm:grid-cols-1 smmd:grid-cols-1 md:grid-cols-1 ">
                   <div className="sm:col-span-12 col-span-2">
-                    {/* <img
-                      src={CII}
-                      alt="CII"
-                      className="z-50 object-cover h-[80px]"
-                    /> */}
+                   
                   </div>
-                  {/* <div className=" col-span-10 sm:hidden smmd:hidden md:hidden ">
-                    <div className="flex justify-end  py-7">
-                      <div className=" title text-base font-medium hover:text-yellow duration-300 text-white pr-10 tracking-wider cursor-pointer">
-                        HOME
-                      </div>
-                      <a href="#event-info">
-                        <div className="title center text-base font-medium hover:text-yellow duration-300 text-white px-10 tracking-wider cursor-pointer">
-                          EVENT INFO
-                        </div>
-                      </a>
-                      <a href="#speaker">
-                        <div className="title  text-base font-medium hover:text-yellow duration-300 text-white px-10 tracking-wider cursor-pointer">
-                          SPEAKER
-                        </div>
-                      </a>
-                      <a href="#sponsors">
-                        <div className=" title text-base font-medium hover:text-yellow duration-300 text-white px-10 tracking-wider cursor-pointer">
-                          SPONSORS
-                        </div>
-                      </a>
-                      <a href="#contact-us">
-                        <div className="title  text-base font-medium hover:text-yellow duration-300 text-white px-10 tracking-wider cursor-pointer">
-                          CONTACT US
-                        </div>
-                      </a>
-
-                      <div></div>
-                    </div>
-                  </div> */}
+               
                 </div>
               </div>
             </div>
-            {/* <div className=" container mx-auto sm:px-4 smmd:px-4 md:px-4">
-              <div className=" grid  grid-cols-2 sm:grid-cols-1 smmd:grid-cols-1 md:grid-cols-1 md:pt-2">
-                <div>
-                  <div className="">
-                    <div className="  my-12 mt-8 mx-auto">
-                      <div className="text-white font-semibold title text-left py-4 pt-0 pb-2 text-h4 sm:text-h4 smmd:text-h4 ">
-                        National Higher Education Conclave 2023{" "}
-                        <span className=" text-white">7th - Edition</span>
-                      </div>
-                      <h2 className=" text-h2 text-left sm:text-h5 smmd:text-h5 text-white pb-4">
-                        Artificial Intelligence & Educational Technology for
-                        Transforming Higher Education
-                      </h2>
-                      <div className=" grid grid-cols-2 py-4">
-                        <div>
-                          <div className=" text-white title text-h3 sm:text-h5  smmd:text-h5 text-left font-semibold">
-                            VENUE
-                          </div>
-                          <p className=" text-h4 text-white sm:text-h6 smmd:text-h6 text-left">
-                            Hotel Le Meridien,
-                          </p>
-                          <p className=" text-h4 text-white sm:text-h6 smmd:text-h6 text-left">
-                            Neelambur, Coimbatore,{" "}
-                          </p>
-                          <p className=" text-h4 text-white sm:text-h6 smmd:text-h6 text-left">
-                            Tamilnadu, India - 641062
-                          </p>
-                        </div>
-                        <div>
-                          <div className=" text-white title text-h3 sm:text-h5 smmd:text-h5 text-left font-semibold">
-                            DATE AND TIME
-                          </div>
-                          <p className=" text-h4 text-white sm:text-h6 smmd:text-h6 text-left">
-                            November 2nd, 2023
-                          </p>
-                          <p className=" text-h4 text-white sm:text-h6 smmd:text-h6 text-left">
-                            9.30 a.m to 6.00 p.m
-                          </p>
-                        </div>
-                      </div>
-                      <div></div>
-
-                      <div className=" text-secondary sm:pt-10 smmd:pt-10 text-left">
-                        *fee applicable
-                      </div>
-
-                      <div className="py-2 my-2 px-10 sm:text-h4 smmd:text-h4 mx-auto text-h2 shadow hover:text-primary  bg-primary hover:bg-yellow cursor-pointer duration-300 rounded-lg font-semibold title tracking-wider text-white">
-                        Register now!
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className=""></div>
-              </div>
-            </div> */}
+           
           </div>
 
           <button
             onClick={() => handleVideoContoller()}
-            class=" absolute w-[100%] mx-auto h-full top-0 left-0 bg-[#033c89a3]   z-40"
+            class=" absolute w-[100%] mx-auto h-full  top-0 left-0 bg-[#033c89a3]   z-40"
           >
             {/* <div className=" text-white  number-font text-[100px]">CII</div> */}
             <div className="grid grid-cols-12 gap-4 sm:grid-cols-1 smmd:grid-cols-1 md:grid-cols-1 ">
@@ -345,10 +257,10 @@ function Home() {
             </div>
             <div className="">
             <div className=" grid grid-cols-12 md:grid-col-full sm:grid-col-full smmd:grid-col-full gap-10">
-              <div className=" col-span-6 md:mx-4 sm:mx-4 smmd:mx-4 md:col-span-full sm:col-span-full smmd:col-span-full bg-[#033c89c7]  md:p-4 p-10 sm:p-4 smmd:p-4 border-yellow-header">
+              <div className=" col-span-6 md:mx-4 sm:mx-4   smmd:mx-4 md:col-span-full sm:col-span-full smmd:col-span-full bg-[#033c89c7]  md:p-4 p-10 sm:p-4 smmd:p-4 border-yellow-header">
               {/* bg-[#033c89c7] */}
-                    <div className=" text-left text-white tracking-wide text-[30px] sm:text-[24px] smmd:text-[24px] leading-[38px]  font-semibold ">National Higher Education Conclave 2023 7th- Edition</div>
-              <div className=" text-left text-yellow tracking-wide  pt-4 text-[20px] sm:text-[18px] smmd:text-[18px]  font-semibold ">
+                    <div className=" text-left text-white tracking-wide text-[30px] md:text-[24px] sm:text-[24px] smmd:text-[24px] leading-[38px]  font-semibold ">National Higher Education Conclave 2023 7th- Edition</div>
+              <div className=" text-left text-yellow tracking-wide sm:hidden smmd:hidden sm:pt-0 smmd:pt-0 md:pt-0  pt-4 text-[20px] sm:text-[18px] smmd:text-[18px]  font-semibold ">
               Artificial Intelligence & Educational Technology for Transforming Higher Education
               </div>
               </div>
@@ -373,7 +285,6 @@ function Home() {
             </div>
        
             
-            {/* <div className=" text-[100px] sm:text-[30px] smmd:text-[30px] md:text-[50px] cii-font text-white">CII - Conference </div> */}
             {controlVideo ? null : (
               <div
                 onClick={() => handleVideoContoller()}
@@ -381,22 +292,20 @@ function Home() {
               >
                 
                 {" "}
-                {/* <div className=" border-4 group-hover:border-white p-2 sm:p-[1px] smmd:p-[1px] md:p-[1px] border-yellow rounded-[50%]">
-                  <BsPlayCircleFill className=" text-yellow text-[80px] sm:text-[40px] md:text-[40px] smmd:text-[40px] rounderd-[50%] p-1 px-2 group-hover:text-white duration-3000" /> */}
-                  
-                {/* </div>{" "} */}
+              
               </div>
             )}
           </button>
           <video
             poster={CIIE}
-            className="mx-auto h-full w-full   sm:h-auto smmd:h-auto"
+            className="mx-auto h-full w-full  "
             id="video"
             preload="auto"
             loop
+            
             autoPlay
           >
-            <source src={vid} type="video/mp4" />
+            <source src={vid} type="video/mp4" className=" "/>
           </video>
 
           {/* <img
@@ -641,7 +550,7 @@ function Home() {
           <div className=" container mx-auto">
             <div className=" grid grid-cols-12  smmd:grid-cols-12 sm:grid-cols-full">
               <div className=" col-span-8 sm:col-span-full smmd:col-span-full md:col-span-full">
-                <h4 className=" text-white text-h2 text-left">
+                <h4 className=" text-white text-h2 sm:text-h5 smmd:text-h5 text-left">
                 To Enhance your Knowledge on “Artificial Intelligence & Educational Technology for Transforming Higher Education”
                 </h4>
                 {/* <h4 className=" text-white text-h4 text-left">
@@ -680,7 +589,7 @@ function Home() {
                     href="https://cam.mycii.in/OR/OnlineRegistrationLogin.html?EventId=E000062816"
                     target="_blank"
                   >
-                    <div className="py-2 my-2 px-10 sm:text-h4 smmd:text-h4 mx-auto text-h2 shadow hover:text-primary  bg-yellow hover:bg-yellow cursor-pointer duration-300 rounded-lg font-semibold title tracking-wider text-white">
+                    <div className="py-2 my-2 sm:text-h5 smmd:text-h5 px-10 sm:text-h4 smmd:text-h4 mx-auto text-h2 shadow hover:text-primary  bg-yellow hover:bg-yellow cursor-pointer duration-300 rounded-lg font-semibold title tracking-wider text-white">
                     Reserve Your Spot
                     </div>
                   </a>
