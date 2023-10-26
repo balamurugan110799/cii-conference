@@ -14,7 +14,7 @@ export default function Gallery() {
       <div className="gallery  ">
         <div className="group gallery-item mb-4 relative ">
           <div className="group-hover:bg-primary h-full ">
-            <img src={firstImage} className="   " />
+            <img src={firstImage} className="  w-full " />
             <div className=" absolute top-0 h-full group-hover:bg-[#033c89ad] w-full p-3  duration-300">
               <div className=" group-hover:border-2 group-hover:h-full group-hover:w-full border-[#6d6d6d00] group-hover:border-white duration-300"></div>
             </div>
@@ -23,7 +23,7 @@ export default function Gallery() {
 
         <div className=" group gallery-item mb-4 relative">
         <div className="group-hover:bg-primary h-full ">
-            <img src={secondImage} className="   " />
+            <img src={secondImage} className=" w-full   " />
             <div className=" absolute top-0 h-full group-hover:bg-[#033c89ad] w-full p-3  duration-300">
               <div className=" group-hover:border-2 group-hover:h-full group-hover:w-full border-[#6d6d6d00] group-hover:border-white duration-300"></div>
             </div>
@@ -37,7 +37,7 @@ export default function Gallery() {
 
         <div className=" group gallery-item mb-4 relative">
         <div className="group-hover:bg-primary h-full ">
-            <img src={fourthImage} className="   " />
+            <img src={fourthImage} className=" w-full   " />
             <div className=" absolute top-0 h-full group-hover:bg-[#033c89ad] w-full p-3  duration-300">
               <div className=" group-hover:border-2 group-hover:h-full group-hover:w-full border-[#6d6d6d00] group-hover:border-white duration-300"></div>
             </div>
@@ -47,7 +47,7 @@ export default function Gallery() {
 
         <div className="group gallery-item mb-4 relative">
         <div className="group-hover:bg-primary h-full ">
-            <img src={fifthImage} className="   " />
+            <img src={fifthImage} className=" w-full   " />
             <div className=" absolute top-0 h-full group-hover:bg-[#033c89ad] w-full p-3  duration-300">
               <div className=" group-hover:border-2 group-hover:h-full group-hover:w-full border-[#6d6d6d00] group-hover:border-white duration-300"></div>
             </div>
@@ -57,7 +57,7 @@ export default function Gallery() {
 
         <div className=" group gallery-item mb-4 relative">
         <div className="group-hover:bg-primary h-full ">
-            <img src={sixthImage} className="   " />
+            <img src={sixthImage} className="  w-full  " />
             <div className=" absolute top-0 h-full group-hover:bg-[#033c89ad] w-full p-3  duration-300">
               <div className=" group-hover:border-2 group-hover:h-full group-hover:w-full border-[#6d6d6d00] group-hover:border-white duration-300"></div>
             </div>
@@ -67,7 +67,7 @@ export default function Gallery() {
 
         <div className="group gallery-item mb-4 relative">
         <div className="group-hover:bg-primary h-full ">
-            <img src={seventhImage} className="   " />
+            <img src={seventhImage} className="  w-full  " />
             <div className=" absolute top-0 h-full group-hover:bg-[#033c89ad] w-full p-3  duration-300">
               <div className=" group-hover:border-2 group-hover:h-full group-hover:w-full border-[#6d6d6d00] group-hover:border-white duration-300"></div>
             </div>

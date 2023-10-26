@@ -43,7 +43,7 @@ export default function Expect() {
                   </div>
                 </div>
                 <div className=" text-[#686868] py-2 text-[18px] sm:text-base smmd:text-base">
-                Future Technology
+                Future of Technology
                 </div>
               </div>
               <div className="col-span-3   ">
@@ -87,22 +87,34 @@ export default function Expect() {
                     Who Should Attend
                   </div>
 
-                  <div className=" py-6 sm:px-6 sm:pt-0 smmd:pt-0 smmd:px-6 sm:pb-0 smmd:pb-0  px-16">
+                  <div className=" py-6 sm:px-6 sm:pt-0 smmd:pt-0 smmd:px-6 sm:pb-0 smmd:pb-0  px-10">
                     <div className="pb-2 flex">
-                      <div className="text-h4 px-2 sm:text-base smmd:text-base text-white">
-                        Institution Owners
+                      <div className="text-h4 px-2 sm:text-base text-left smmd:text-base text-white">
+                      Chairmen and Managing Trustees
                       </div>
                     </div>
 
                     <div className="pb-2 flex">
-                      <div className="text-h4 px-2 sm:text-base smmd:text-base text-white">
-                        Teaching Faculties
+                      <div className="text-h4 px-2 sm:text-base  text-left smmd:text-base text-white">
+                        Academicians
                       </div>
                     </div>
 
                     <div className=" flex">
-                      <div className="text-h4 px-2 sm:text-base smmd:text-base text-white">
-                        Industrialist
+                      <div className="text-h4 px-2 sm:text-base  text-left smmd:text-base text-white">
+                        Industrialists
+                      </div>
+                    </div>
+
+                    <div className=" flex">
+                      <div className="text-h4 px-2 sm:text-base  text-left smmd:text-base text-white">
+                        Technologists
+                      </div>
+                    </div>
+
+                    <div className=" flex">
+                      <div className="text-h4 px-2 sm:text-base  text-left smmd:text-base text-white">
+                      EdTech  Companies
                       </div>
                     </div>
                   </div>

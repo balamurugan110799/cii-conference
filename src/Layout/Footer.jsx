@@ -7,11 +7,15 @@ import Slider from "./Slider";
 
 function Footer() {
   return (
-    <div className="bg-[#e6e6e6] py-16">
-      <div className="  py-16 sm:py-0 md:px-4 What you can Expect
-">
+    <div className="bg-[#e6e6e6] py-16 pb-0">
+       <div className=" text-yellow sm:text-h5  smmd:text-h5 sm:pb-4 smmd:pb-4  text-h1 font-semibold">CONTACT US</div>
+      <div className="  py-16 sm:py-0 md:px-4">
+       
         <div className=" container mx-auto sm:px-4 smmd:px-4">
-          <div id="contact-us" className=" grid grid-cols-12 gap-10 sm:grid-cols-full sm:gap-4 smmd:gap-4  md:grid-cols-12 smmd:grid-cols-full">
+          <div
+            id="contact-us"
+            className=" grid grid-cols-12 gap-10 sm:grid-cols-full sm:gap-4 smmd:gap-4  md:grid-cols-12 smmd:grid-cols-full"
+          >
             <div className=" col-span-5 sm:col-span-full md:col-span-full smmd:col-span-full">
               <h3 className=" text-h3 sm:text-h5 smmd:text-h5 text-primary font-semibold text-left">
                 Confederation of Indian Industry - Coimbatore
