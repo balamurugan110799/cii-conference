@@ -205,8 +205,8 @@ function Home() {
   // };
   return (
     <div>
-      {/* {loaderState ? <Loader/> :<> 
-       </> } */}
+      {loaderState ? <Loader/> :<> 
+     
 
        <div className=" relative">
 
@@ -707,6 +707,7 @@ function Home() {
       </div>
     
       </div>
+      </> }
     </div>
   );
 }
