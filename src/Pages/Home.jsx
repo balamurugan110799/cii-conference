@@ -650,12 +650,12 @@ function Home() {
       <Footer/>
 
 
-      <div id="scrolling" className="sticky z-50 bottom-0 bg-[#c29729f2] py-10">
+      <div id="scrolling" className="sticky z-50 bottom-0 bg-[#c29729f2] py-8">
 
         <div className=" container mx-auto">
         <div className=" grid grid-cols-12  smmd:grid-cols-12 sm:grid-cols-full gap-2">
               <div className=" col-span-8 sm:col-span-full smmd:col-span-full md:col-span-full">
-                <h4 className=" text-white text-h3 sm:text-h5 smmd:text-h5 text-left">
+                <h4 className=" text-white text-h4 sm:text-h5 smmd:text-h5 text-left">
                   To Enhance your Knowledge on “Artificial Intelligence &
                   Educational Technology for Transforming Higher Education”
                 </h4>
@@ -695,7 +695,7 @@ function Home() {
                     href="https://cam.mycii.in/OR/OnlineRegistrationLogin.html?EventId=E000062816"
                     target="_blank"
                   >
-                    <div className="py-2 my-2 sm:text-h5px-10 sm:text-h4  mx-auto text-h2 shadow hover:text-primary  bg-primary hover:bg-secondary cursor-pointer duration-300 rounded-lg font-semibold title tracking-wider text-white">
+                    <div className="py-2 my-2 sm:text-h5px-10 sm:text-h4  mx-auto text-h4 shadow hover:text-primary  bg-primary hover:bg-secondary cursor-pointer duration-300 rounded-lg font-semibold title tracking-wider text-white">
                       Reserve Your Spot
                     </div>
                   </a>
