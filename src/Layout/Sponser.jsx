@@ -59,66 +59,275 @@ export default function Sponser() {
   };
   return (
     <>
- <div id="sponsors" className=" container mx-auto py-16 sm:pb-10 smmd:pb-10">
-        <h1 className=" font-semibold text-yellow text-h1 sm:text-h3 smmd:text-h3 pb-6">SPONSORS</h1>
-     
-    <div className="">
-    <Swiper
-        slidesPerView={3}
-        spaceBetween={30}
-        freeMode={true}
-        pagination={{
-          clickable: true,
-        }}
-        breakpoints={{
-          300: {
-            slidesPerView: 1.2,
-            spaceBetween: 20,
-          },
-          768: {
-            slidesPerView: 2,
-            spaceBetween: 40,
-          },
-          1024: {
-            slidesPerView: 5.5,
-            spaceBetween: 50,
-          },
-        }}
-        modules={[FreeMode, Pagination]}
-        className="mySwiper"
+      <div
+        id="sponsors"
+        className=" container mx-auto py-16 sm:pb-10 smmd:pb-10"
       >
-        <SwiperSlide>
-          <img src={GRD} alt="GRD" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={RVS} alt="RVS" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={Krishna} alt="Krishna" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={Bannari} alt="Bannari" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={CIT} alt="CIT" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={Coursa} alt="Coursa" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={NGP} alt="NGP" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={HICAS} alt="HICAS" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={REC} alt="REC" />
-        </SwiperSlide>
-      </Swiper>
-    </div>
+        <h1 className=" font-semibold text-yellow text-h1 sm:text-h3 smmd:text-h3 pb-6">
+          SPONSORS
+        </h1>
 
-    </div>
-     
+        <div className="  sm:hidden smmd:hidden md:hidden">
+          <div className=" grid grid-cols-12 sm:grid-cols-full  smmd:grid-cols-full py-6  pt-0 gap-4 sm:gap-0 smmd:gap-0">
+            <div className=" col-span-6 sm:col-span-full smmd:col-span-full">
+              <h1 className=" text-primary pb-3 text-left text-h2 font-semibold px-4">
+                Principal Sponsors
+              </h1>
+              <div className=" grid grid-cols-12 gap-4">
+                <div className=" col-span-4">
+                  <div className="  border-2  border-[#e9e9e9] p-2">
+                    {" "}
+                    <img src={GRD} alt="GRD" />
+                  </div>
+                </div>
+                <div className=" col-span-4">
+                  <div className="  border-2  border-[#e9e9e9] p-2">
+                    {" "}
+                    <img src={RVS} alt="GRD" />
+                  </div>
+                </div>
+                <div className=" col-span-4">
+                  <div className="  border-2  border-[#e9e9e9] p-2">
+                    {" "}
+                    <img src={Krishna} alt="GRD" />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className=" col-span-6">
+              <h1 className=" text-primary pb-3 text-left text-h2 font-semibold px-4">
+                Co-Sponsors
+              </h1>
+              <div className=" grid grid-cols-12 gap-6">
+                <div className=" col-span-4">
+                  <div className="  border-2  border-[#e9e9e9] p-2">
+                    {" "}
+                    <img src={Bannari} alt="GRD " className="  object-cover " />
+                  </div>
+                </div>
+                <div className=" col-span-4 ">
+                  <div className="  border-2  border-[#e9e9e9]  p-2 ">
+                    {" "}
+                    <img src={CIT} alt="GRD" />
+                  </div>
+                </div>
+                <div className=" col-span-4">
+                  <div className="  border-2  border-[#e9e9e9]  p-2">
+                    {" "}
+                    <img src={Coursa} alt="GRD" />
+                  </div>
+                </div>
+                <div className=" col-span-4">
+                  <div className="  border-2  border-[#e9e9e9]  p-2">
+                    {" "}
+                    <img src={NGP} alt="GRD" />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className=" col-span-6">
+              <h1 className=" text-primary pb-3 text-left text-h2 font-semibold px-4">
+                Associate Sponsors
+              </h1>
+              <div className=" grid grid-cols-12 gap-6">
+                <div className=" col-span-4 ">
+                  <div className="  border-2  border-[#e9e9e9] p-2">
+                    {" "}
+                    <img src={HICAS} alt="GRD" />
+                  </div>
+                </div>
+                <div className=" col-span-4">
+                  <div className=" border-2  border-[#e9e9e9] p-2">
+                    {" "}
+                    <img src={REC} alt="GRD" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className=" desktop-heading">
+          <div className=" mb-3">
+            <h1 className=" text-primary pb-3 text-left text-h2 font-semibold px-4">
+              Principal Sponsors
+            </h1>
+            <Swiper
+              slidesPerView={3}
+              spaceBetween={30}
+              freeMode={true}
+              pagination={{
+                clickable: true,
+              }}
+              breakpoints={{
+                300: {
+                  slidesPerView: 1.2,
+                  spaceBetween: 20,
+                },
+                768: {
+                  slidesPerView: 2,
+                  spaceBetween: 40,
+                },
+                1024: {
+                  slidesPerView: 5.5,
+                  spaceBetween: 50,
+                },
+              }}
+              modules={[FreeMode, Pagination]}
+              className="mySwiper"
+            >
+              <SwiperSlide>
+                <img src={GRD} alt="GRD" />
+              </SwiperSlide>
+              <SwiperSlide>
+                <img src={RVS} alt="RVS" />
+              </SwiperSlide>
+              <SwiperSlide>
+                <img src={Krishna} alt="Krishna" />
+              </SwiperSlide>
+            </Swiper>
+          </div>
+
+          <div className=" mb-3">
+          <h1 className=" text-primary pb-3 text-left text-h2 font-semibold px-4">
+            Co-Sponsors
+          </h1>
+          <Swiper
+            slidesPerView={3}
+            spaceBetween={30}
+            freeMode={true}
+            pagination={{
+              clickable: true,
+            }}
+            breakpoints={{
+              300: {
+                slidesPerView: 1.2,
+                spaceBetween: 20,
+              },
+              768: {
+                slidesPerView: 2,
+                spaceBetween: 40,
+              },
+              1024: {
+                slidesPerView: 5.5,
+                spaceBetween: 50,
+              },
+            }}
+            modules={[FreeMode, Pagination]}
+            className="mySwiper"
+          >
+            <SwiperSlide>
+              <img src={Bannari} alt="Bannari" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={CIT} alt="CIT" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={Coursa} alt="Coursa" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={NGP} alt="NGP" />
+            </SwiperSlide>
+          </Swiper>
+          </div>
+
+         
+            <div className=" mb-3">
+            <h1 className=" text-primary  pb-3 text-left text-h2 font-semibold px-4">
+            Associate Sponsors
+          </h1>
+          <Swiper
+            slidesPerView={3}
+            spaceBetween={30}
+            freeMode={true}
+            pagination={{
+              clickable: true,
+            }}
+            breakpoints={{
+              300: {
+                slidesPerView: 1.2,
+                spaceBetween: 20,
+              },
+              768: {
+                slidesPerView: 2,
+                spaceBetween: 40,
+              },
+              1024: {
+                slidesPerView: 5.5,
+                spaceBetween: 50,
+              },
+            }}
+            modules={[FreeMode, Pagination]}
+            className="mySwiper"
+          >
+            <SwiperSlide>
+              <img src={HICAS} alt="HICAS" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={REC} alt="REC" />
+            </SwiperSlide>
+          </Swiper>
+            </div>
+      
+        </div>
+
+        {/* <div className="">
+          <Swiper
+            slidesPerView={3}
+            spaceBetween={30}
+            freeMode={true}
+            pagination={{
+              clickable: true,
+            }}
+            breakpoints={{
+              300: {
+                slidesPerView: 1.2,
+                spaceBetween: 20,
+              },
+              768: {
+                slidesPerView: 2,
+                spaceBetween: 40,
+              },
+              1024: {
+                slidesPerView: 5.5,
+                spaceBetween: 50,
+              },
+            }}
+            modules={[FreeMode, Pagination]}
+            className="mySwiper"
+          >
+            <SwiperSlide>
+              <img src={GRD} alt="GRD" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={RVS} alt="RVS" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={Krishna} alt="Krishna" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={Bannari} alt="Bannari" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={CIT} alt="CIT" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={Coursa} alt="Coursa" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={NGP} alt="NGP" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={HICAS} alt="HICAS" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={REC} alt="REC" />
+            </SwiperSlide>
+          </Swiper>
+        </div> */}
+      </div>
 
       {/* <div id="sponsors" className=" container mx-auto py-16">
         <h1 className=" font-semibold text-yellow text-h1 pb-4">SPONSORS</h1>

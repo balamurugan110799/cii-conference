@@ -90,7 +90,7 @@ export default function Expect() {
                   <div className=" py-6 sm:px-6 sm:pt-0 smmd:pt-0 smmd:px-6 sm:pb-0 smmd:pb-0  px-10">
                     <div className="pb-2 flex">
                       <div className="text-h4 px-2 sm:text-base text-left smmd:text-base text-white">
-                      Chairmen and Managing Trustees
+                      Chairmen & Managing Trustees
                       </div>
                     </div>
 
@@ -100,19 +100,19 @@ export default function Expect() {
                       </div>
                     </div>
 
-                    <div className=" flex">
+                    <div className="pb-2 flex">
                       <div className="text-h4 px-2 sm:text-base  text-left smmd:text-base text-white">
                         Industrialists
                       </div>
                     </div>
 
-                    <div className=" flex">
+                    <div className="pb-2 flex">
                       <div className="text-h4 px-2 sm:text-base  text-left smmd:text-base text-white">
                         Technologists
                       </div>
                     </div>
 
-                    <div className=" flex">
+                    <div className="pb-2 flex">
                       <div className="text-h4 px-2 sm:text-base  text-left smmd:text-base text-white">
                       EdTech  Companies
                       </div>

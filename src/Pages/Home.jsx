@@ -279,7 +279,7 @@ function Home() {
             </div>
             <div className="">
               <div className=" grid grid-cols-12 md:grid-col-full sm:grid-col-full smmd:grid-col-full gap-10">
-                <div className=" col-span-6 md:mx-4 sm:mx-4  sm:hidden smmd:hidden  smmd:mx-4 md:col-span-full sm:col-span-full smmd:col-span-full bg-[#033c89c7]  md:p-4 p-6 sm:p-4 smmd:p-4 border-yellow-header">
+                <div className=" col-span-6 md:mx-4 sm:mx-4  sm:hidden smmd:hidden md:hidden  smmd:mx-4 md:col-span-full sm:col-span-full smmd:col-span-full bg-[#033c89c7]  md:p-4 p-6 sm:p-4 smmd:p-4 border-yellow-header">
                   <div className=" text-left text-white tracking-wide text-[30px] md:text-[24px] sm:text-[24px] smmd:text-[24px] leading-[38px]  font-semibold ">
                     National Higher Education Conclave 2023 7<sup>th</sup> Edition
                   </div>
@@ -289,7 +289,7 @@ function Home() {
                   </div>
                 </div>
                 <div className=" col-span-6 md:col-span-full  sm:col-span-full smmd:col-span-full center">
-                  {controlVideo ? null : (
+                  {/* {controlVideo ? null : (
                     <div
                       onClick={() => handleVideoContoller()}
                       className="pulse-animation "
@@ -299,9 +299,12 @@ function Home() {
                         <BsPlayCircleFill className=" text-yellow text-[70px] sm:text-[40px] md:text-[40px] smmd:text-[40px] rounderd-[50%] p-1 px-2 group-hover:text-white duration-3000" />
                       </div>
                     </div>
-                  )}
+                  )} */}
                 </div>
               </div>
+
+
+
             </div>
 
             {controlVideo ? null : (
@@ -324,13 +327,28 @@ function Home() {
         </div>
       </section>
 
+      <div className=" grid grid-cols-12 desktop-heading md:grid-col-full sm:grid-col-full smmd:grid-col-full mt-6 sm:mb-6 smmd:mb-6 md:mb-6 gap-10">
+                <div className=" col-span-full md:mx-4 sm:mx-4  smmd:mx-4 md:col-span-full sm:col-span-full smmd:col-span-full bg-primary  md:p-4 p-6 sm:p-4 smmd:p-4 border-yellow-header">
+                  <div className=" text-left text-white tracking-wide text-[30px] md:text-[24px] sm:text-[24px] smmd:text-[24px] leading-[38px]  font-semibold ">
+                    National Higher Education Conclave 2023 7<sup>th</sup> Edition
+                  </div>
+                  <div className=" text-left text-yellow tracking-wide sm:pt-0 smmd:pt-0 md:pt-0  pt-4 text-[20px] sm:text-[18px] smmd:text-[18px]  font-semibold ">
+                    Artificial Intelligence & Educational Technology for
+                    Transforming Higher Education
+                  </div>
+                </div>
+                <div className=" col-span-6 md:col-span-full  sm:col-span-full smmd:col-span-full center">
+                
+                </div>
+              </div>
+
       <div></div>
 
       <section
         id="event-info"
         className=" container mx-auto sm:px-4 smmd:px-4 md:px-4"
       >
-        <div className=" py-16  sm:pb-10 smmd:pb-10">
+        <div className=" py-16 pb-10  sm:pb-10 smmd:pb-10 sm:pt-0 smmd:pt-0 md:pt-0">
           <h1 className=" font-semibold sm:text-h3 smmd:text-h3  text-yellow text-h1 pb-4">
             EVENT INFO
           </h1>
@@ -535,8 +553,8 @@ function Home() {
           <div className=" container mx-auto">
             <div className=" grid grid-cols-12  smmd:grid-cols-12 sm:grid-cols-full gap-2">
               <div className=" col-span-8 sm:col-span-full smmd:col-span-full md:col-span-full">
-                <h4 className=" text-white text-h2 sm:text-h5 smmd:text-h5 text-left">
-                  To Enhance your Knowledge on “Artificial Intelligence &
+                <h4 className=" text-white text-h2  px-2 sm:text-h5 smmd:text-h5 text-left">
+                  To Enhance Your Knowledge on “Artificial Intelligence &
                   Educational Technology for Transforming Higher Education”
                 </h4>
                 {/* <h4 className=" text-white text-h4 text-left">
@@ -597,7 +615,7 @@ function Home() {
         </div>
       </section>
 
-      <section>
+      <section className=" ">
         <Sponser />
       </section>
       <section id="" className="md:px-4">
@@ -650,45 +668,22 @@ function Home() {
       <Footer/>
 
 
-      <div id="scrolling" className="sticky z-50 bottom-0 bg-[#c29729f2] py-8">
+      <div id="scrolling" className="sticky z-50 bottom-0 bg-[#c29729f2] py-8 sm:py-4 sm:p-2 smmd:p-2 md:p-2  smmd:py-4">
 
         <div className=" container mx-auto">
         <div className=" grid grid-cols-12  smmd:grid-cols-12 sm:grid-cols-full gap-2">
-              <div className=" col-span-8 sm:col-span-full smmd:col-span-full md:col-span-full">
-                <h4 className=" text-white text-h4 sm:text-h5 smmd:text-h5 text-left">
-                  To Enhance your Knowledge on “Artificial Intelligence &
+              <div className=" col-span-8 sm:col-span-full sm:hidden smmd:hidden smmd:col-span-full md:col-span-full">
+                <h4 className=" text-white  text-h4 md:text-h5 sm:text-h5 smmd:text-h5 text-left">
+                  To Enhance Your Knowledge on “Artificial Intelligence &
                   Educational Technology for Transforming Higher Education”
                 </h4>
-                {/* <h4 className=" text-white text-h4 text-left">
-                  Artificial Intelligence & Educational Technology for
-                  Transforming Higher Education
-                </h4> */}
                 <div>
-                  {/* <div className=" grid grid-cols-2 py-4 sm:pt-8 smmd:pt-8">
-                    <div className=" text-white  text-left">
-                      {" "}
-                      <div className=" bg-primary  mb-2 rounded-lg center h-[40px] w-[40px]">
-                        <HiLocationMarker className=" text-h2 text-yellow" />
-                      </div>
-                      <div>
-                        Hotel Le Meridien, Coimbatore, <br /> Neelambur,
-                        Tamilnadu, India - 641062
-                      </div>
-                    </div>{" "}
-                    <div className=" text-white  text-left">
-                      {" "}
-                      <div className=" bg-primary  mb-2 rounded-lg center h-[40px] w-[40px]">
-                        <HiClock className=" text-h2 text-yellow" />
-                      </div>
-                      <div>November <sup>2nd</sup> <br/> 2023 9.30 a.m  to 6.00 p.m</div>
-                    </div>{" "}
-                  </div> */}
                 </div>
                 <div></div>
               </div>
               <div className=" col-span-4 sm:col-span-full smmd:col-span-full md:col-span-full h-full relative">
-                <div className=" absolute sm:relative smmd:relative md:relative bottom-0 w-full">
-                  <div className=" text-primary  text-sm sm:pt-4 smmd:pt-4 text-left">
+                <div className="mt-4 absolute sm:relative smmd:relative md:relative bottom-0 w-full">
+                <div className=" text-primary  text-sm sm:pt-4 smmd:pt-4 text-left">
                     *fee applicable
                   </div>
                   <a
@@ -699,6 +694,7 @@ function Home() {
                       Reserve Your Spot
                     </div>
                   </a>
+              
                 </div>
               </div>
             </div>

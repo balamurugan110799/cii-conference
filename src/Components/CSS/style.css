@@ -157,3 +157,6 @@
   #scrolling {
     display: none;
   }
+  .desktop-heading{
+    display: none!important;
+  }

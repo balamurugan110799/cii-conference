@@ -13,7 +13,7 @@ export default function ConclaveSession() {
         <div className=" col-span-8 ">
           <div className=" px-10 py-8 sm:px-4  smmd:px-4">
             <div className="text-left font-semibold sm:text-h4 smmd:text-h4 text-[30px] text-primary">
-              Plenary Session on:
+              Plenary Session on
             </div>
             <div className=" grid grid-cols-12 sm:grid-cols-1 smmd:grid-cols-1 pt-3">
               <div className=" col-span-2 sm:hidden smmd:hidden"></div>

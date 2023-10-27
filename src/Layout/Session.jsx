@@ -327,9 +327,9 @@ export default function Session() {
     <div className=" container mx-auto" >
       {/* <div className="  py-16"></div> */}
 
-      <div onClick={() => handleClick(1)} className={` ${sesssionFirstState ? "bg-primary " : " bg-yellow"} relative w-full text-left  p-6 text-h3 font-semibold tracking-wider text-white  `}>
+      <div onClick={() => handleClick(1)} className={` ${sesssionFirstState ? "bg-primary " : " bg-yellow"} cursor-pointer relative w-full sm:text-h5 smmd:text-h6 text-left  p-6 text-h3 font-semibold tracking-wider text-white  `}>
         Inaugural Session
-        <div className=" absolute right-0 top-8 px-4">  {sesssionFirstState ?  <><HiMinus/></> :<HiPlus/>}</div>
+        <div className=" absolute right-0 sm:top-7 smmd:top-7 md:top-7 top-8 px-4">  {sesssionFirstState ?  <><HiMinus/></> :<HiPlus/>}</div>
       </div>
       {sesssionFirstState ? <>
         {sessionFirst ? <>
@@ -337,8 +337,8 @@ export default function Session() {
             {Inaugural?.map((v, i) => {
               return (
                 <>
-                  <div className=" col-span-2 p-2  border-b-2  border-[#d0d0d0] text-[#222] font-semibold">{v?.time}</div>
-                  <div className=" col-span-10 p-2 border-b-2  border-[#d0d0d0]">
+                  <div className=" col-span-2 sm:col-span-4 smmd:col-span-4 md:col-span-3 p-2 text-left  border-b-2  border-[#d0d0d0] text-[#222] font-semibold">{v?.time}</div>
+                  <div className=" col-span-10 sm:col-span-8 smmd:col-span-8 md:col-span-9 p-2 border-b-2  border-[#d0d0d0]">
                     <div className=" text-left text-primary font-semibold">{v?.content}</div>
                     <div className={` ${v?.speaker === "" ? "hidden" : "block"} text-left  text-[#222] font-semibold`}>Speaker</div>
                     <div className={` ${v?.speaker === "" ? "hidden" : "block"} text-left  text-[#686868] `}>{v?.speaker}</div>
@@ -351,17 +351,17 @@ export default function Session() {
         </> : null}
       </> : null}
 
-      <div onClick={() => handleClick(2)} className={` ${sesssionSecondState ? "bg-primary " : " bg-yellow"} text-left relative  p-6 text-h3 font-semibold tracking-wider text-white  `}>
+      <div onClick={() => handleClick(2)} className={` ${sesssionSecondState ? "bg-primary " : " bg-yellow"} cursor-pointer relative w-full sm:text-h5 smmd:text-h6 text-left  p-6 text-h3 font-semibold tracking-wider text-white   `}>
       AI and EdTech in Shaping the Future of Higher Education
-      <div className=" absolute right-0 top-8 px-4">  {sesssionSecondState ?  <><HiMinus/></> :<HiPlus/>}</div>
+      <div className=" absolute right-0 sm:top-7 smmd:top-7 md:top-7 top-8 px-4">  {sesssionSecondState ?  <><HiMinus/></> :<HiPlus/>}</div>
       </div>
       {sesssionSecondState ? <>
         <div className=" grid grid-cols-12 bg-[#e6e6e6]  pt-4  mb-4">
           {EdTech?.map((v, i) => {
             return (
               <>
-                <div className=" col-span-2 p-2  border-b-2  border-[#d0d0d0] text-[#222] font-semibold">{v?.time}</div>
-                <div className=" col-span-10 p-2 border-b-2  border-[#d0d0d0]">
+                <div className="col-span-2 sm:col-span-4 smmd:col-span-4 md:col-span-3 p-2 text-left  border-b-2  border-[#d0d0d0] text-[#222] font-semibold">{v?.time}</div>
+                <div className=" col-span-10 sm:col-span-8 smmd:col-span-8 md:col-span-9 p-2 border-b-2  border-[#d0d0d0]">
                   <div className=" text-left text-primary font-semibold">{v?.content}</div>
                   <div className={` ${v?.speaker === "" ? "hidden" : "block"} text-left  text-[#222] font-semibold`}>Speaker</div>
                   <div className={` ${v?.speaker === "" ? "hidden" : "block"} text-left  text-[#686868] `}>{v?.speaker}</div>
@@ -372,17 +372,17 @@ export default function Session() {
         </div></> : null}
 
 
-      <div onClick={() => handleClick(3)} className={` ${sesssionThirdState ? "bg-primary " : " bg-yellow"}  relative text-left  p-6 text-h3 font-semibold tracking-wider text-white  `}>
+      <div onClick={() => handleClick(3)} className={` ${sesssionThirdState ? "bg-primary " : " bg-yellow"} cursor-pointer relative w-full sm:text-h5 smmd:text-h6 text-left  p-6 text-h3 font-semibold tracking-wider text-white  `}>
       Enhancing Teaching and Learning through AI and EdTech
-      <div className=" absolute right-0 top-8 px-4">  {sesssionThirdState ?  <><HiMinus/></> :<HiPlus/>}</div>
+      <div className=" absolute right-0 sm:top-7 smmd:top-7 md:top-7 top-8 px-4">  {sesssionThirdState ?  <><HiMinus/></> :<HiPlus/>}</div>
       </div>
       {sesssionThirdState ? <>
         <div className=" grid grid-cols-12 bg-[#e6e6e6]  pt-4 mb-4">
           {Learning?.map((v, i) => {
             return (
               <>
-                <div className=" col-span-2 p-2  border-b-2  border-[#d0d0d0] text-[#222] font-semibold">{v?.time}</div>
-                <div className=" col-span-10 p-2 border-b-2  border-[#d0d0d0]">
+                <div className="col-span-2 sm:col-span-4 smmd:col-span-4 md:col-span-3 p-2 text-left  border-b-2  border-[#d0d0d0] text-[#222] font-semibold">{v?.time}</div>
+                <div className="  col-span-10 sm:col-span-8 smmd:col-span-8 md:col-span-9 p-2 border-b-2  border-[#d0d0d0]">
                   <div className=" text-left text-primary font-semibold">{v?.content}</div>
                   <div className={` ${v?.speaker === "" ? "hidden" : "block"} text-left  text-[#222] font-semibold`}>Speaker</div>
                   <div className={` ${v?.speaker === "" ? "hidden" : "block"} text-left  text-[#686868] `}>{v?.speaker}</div>
@@ -393,17 +393,17 @@ export default function Session() {
         </div></> : null}
 
 
-      <div onClick={() => handleClick(4)} className={` ${sesssionFourthState ? "bg-primary " : " bg-yellow"} text-left  relative p-6 text-h3 font-semibold tracking-wider text-white  `}>
+      <div onClick={() => handleClick(4)} className={` ${sesssionFourthState ? "bg-primary " : " bg-yellow"}  cursor-pointer relative w-full sm:text-h5 smmd:text-h6 text-left  p-6 text-h3 font-semibold tracking-wider text-white `}>
       Student Engagement with AI
-      <div className=" absolute right-0 top-8 px-4">  {sesssionFourthState ?  <><HiMinus/></> :<HiPlus/>}</div>
+      <div className=" absolute right-0 sm:top-7 smmd:top-7 md:top-7 top-8 px-4">  {sesssionFourthState ?  <><HiMinus/></> :<HiPlus/>}</div>
       </div>
 
       {sesssionFourthState ? <>   <div className=" grid grid-cols-12 bg-[#e6e6e6]  pt-4 mb-4">
         {StudentEngagement?.map((v, i) => {
           return (
             <>
-              <div className=" col-span-2 p-2  border-b-2  border-[#d0d0d0] text-[#222] font-semibold">{v?.time}</div>
-              <div className=" col-span-10 p-2 border-b-2  border-[#d0d0d0]">
+              <div className="col-span-2 sm:col-span-4 smmd:col-span-4 md:col-span-3 p-2 text-left  border-b-2  border-[#d0d0d0] text-[#222] font-semibold">{v?.time}</div>
+              <div className="  col-span-10 sm:col-span-8 smmd:col-span-8 md:col-span-9 p-2 border-b-2  border-[#d0d0d0]">
                 <div className=" text-left text-primary font-semibold">{v?.content}</div>
                 <div className={` ${v?.speaker === "" ? "hidden" : "block"} text-left  text-[#222] font-semibold`}>Speaker</div>
                 <div className={` ${v?.speaker === "" ? "hidden" : "block"} text-left  text-[#686868] `}>{v?.speaker}</div>
@@ -415,9 +415,9 @@ export default function Session() {
       </div></> : null}
 
 
-      <div onClick={() => handleClick(5)} className={` ${sesssionFifthState ? "bg-primary " : " bg-yellow"} relative text-left  p-6 text-h3 font-semibold tracking-wider text-white  `}>
+      <div onClick={() => handleClick(5)} className={` ${sesssionFifthState ? "bg-primary " : " bg-yellow"} cursor-pointer relative w-full sm:text-h5 smmd:text-h6 text-left  p-6 text-h3 font-semibold tracking-wider text-white  `}>
       AI for Academic Administration
-      <div className=" absolute right-0 top-8 px-4">  {sesssionFifthState ?  <><HiMinus/></> :<HiPlus/>}</div>
+      <div className=" absolute right-0 sm:top-7 smmd:top-7 md:top-7 top-8 px-4">  {sesssionFifthState ?  <><HiMinus/></> :<HiPlus/>}</div>
       </div>
 
       {sesssionFifthState ? <>
@@ -426,8 +426,8 @@ export default function Session() {
           {AcademicAdministration?.map((v, i) => {
             return (
               <>
-                <div className=" col-span-2 p-2  border-b-2  border-[#d0d0d0] text-[#222] font-semibold">{v?.time}</div>
-                <div className=" col-span-10 p-2 border-b-2  border-[#d0d0d0]">
+                <div className="col-span-2 sm:col-span-4 smmd:col-span-4 md:col-span-3 p-2 text-left  border-b-2  border-[#d0d0d0] text-[#222] font-semibold">{v?.time}</div>
+                <div className="  col-span-10 sm:col-span-8 smmd:col-span-8 md:col-span-9 p-2 border-b-2  border-[#d0d0d0]">
                   <div className=" text-left text-primary font-semibold">{v?.content}</div>
                   <div className={` ${v?.speaker === "" ? "hidden" : "block"} text-left  text-[#222] font-semibold`}>Speaker</div>
                   <div className={` ${v?.speaker === "" ? "hidden" : "block"} text-left  text-[#686868] `}>{v?.speaker}</div>
@@ -439,17 +439,17 @@ export default function Session() {
 
 
 
-        <div onClick={() => handleClick(6)} className={` ${sesssionSixthState ? "bg-primary " : " bg-yellow"}  realtive text-left  p-6 text-h3 font-semibold tracking-wider text-white  `}>
+        <div onClick={() => handleClick(6)} className={` ${sesssionSixthState ? "bg-primary " : " bg-yellow"}  cursor-pointer relative w-full sm:text-h5 smmd:text-h6 text-left  p-6 text-h3 font-semibold tracking-wider text-white `}>
         Future of Work and Future Work
-        <div className=" absolute right-0 top-8 px-4">  {sesssionSixthState ?  <><HiMinus/></> :<HiPlus/>}</div>
+        <div className=" absolute right-0 sm:top-7 smmd:top-7 md:top-7 top-8 px-4">  {sesssionSixthState ?  <><HiMinus/></> :<HiPlus/>}</div>
       </div>
 
           {sesssionSixthState ? <><div className=" grid grid-cols-12 bg-[#e6e6e6]  pt-4 mb-4">
         {FutureWork?.map((v, i) => {
           return (
             <>
-              <div className=" col-span-2 p-2  border-b-2  border-[#d0d0d0] text-[#222] font-semibold">{v?.time}</div>
-              <div className=" col-span-10 p-2 border-b-2  border-[#d0d0d0]">
+              <div className="col-span-2 sm:col-span-4 smmd:col-span-4 md:col-span-3 p-2 text-left  border-b-2  border-[#d0d0d0] text-[#222] font-semibold">{v?.time}</div>
+              <div className="  col-span-10 sm:col-span-8 smmd:col-span-8 md:col-span-9 p-2 border-b-2  border-[#d0d0d0]">
                 <div className=" text-left text-primary font-semibold">{v?.content}</div>
                 <div className={` ${v?.speaker === "" ? "hidden" : "block"} text-left  text-[#222] font-semibold`}>Speaker</div>
                 <div className={` ${v?.speaker === "" ? "hidden" : "block"} text-left  text-[#686868] `}>{v?.speaker}</div>
