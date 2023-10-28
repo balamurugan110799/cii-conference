@@ -120,6 +120,7 @@ function Home() {
         .then((res) => {
           setSubmitDisable(false)
           console.log("Success")
+          sessionStorage.setItem("status", "success");
           // window.location = "/thank-you"
           navigate('/thank-you')
         })
@@ -333,45 +334,45 @@ function Home() {
               >
                 <div className="grid grid-cols-12 gap-4 sm:grid-cols-1 smmd:grid-cols-1 md:grid-cols-1 ">
                   <div className="sm:col-span-12 col-span-2">
-                    <div className=" flex z-50 top-0 py-10 sm:py-0 smmd:py-0 absolute left-10">
+                    <div className=" flex z-50 top-0 py-2 sm:py-0 smmd:py-0 absolute left-0">
                       <div className>
                         <img
                           src={CII}
                           alt="CII"
-                          className="z-50 sm:h-[50px] smmd:h-[50px]  h-[100px] md:h-[80px] pr-4 object-cover "
+                          className="z-50 sm:h-[50px] smmd:h-[50px]  h-[80px] md:h-[80px] pr-4 object-cover "
                         />
                       </div>
                       <div>
                         <img
                           src={NHEC}
                           alt="CII"
-                          className="z-50 sm:h-[50px] smmd:h-[50px] h-[100px] md:h-[80px] object-cover "
+                          className="z-50 sm:h-[50px] smmd:h-[50px] h-[80px] md:h-[80px] object-cover "
                         />
                       </div>
                     </div>
                   </div>
-                  <div className=" top-0 py-16 right-0 absolute col-span-10 sm:hidden smmd:hidden md:hidden ">
-                    <div className="flex justify-end  py-7">
-                      <div className=" title text-base  font-bold tracking-widest hover:text-yellow duration-300 text-white pr-10 cursor-pointer">
+                  <div className=" top-0 py-2 right-0 absolute col-span-10 sm:hidden smmd:hidden md:hidden ">
+                    <div className="flex justify-end  py-10">
+                      <div className=" title text-base  font-bold tracking-widest hover:text-yellow duration-300 text-white pr-6 cursor-pointer">
                         HOME
                       </div>
                       <a href="#event-info">
-                        <div className="title center text-base font-bold hover:text-yellow duration-300 text-white px-10 tracking-widest cursor-pointer">
+                        <div className="title center text-base font-bold hover:text-yellow duration-300 text-white px-6 tracking-widest cursor-pointer">
                           EVENT INFO
                         </div>
                       </a>
                       <a href="#speaker">
-                        <div className="title  text-base font-bold hover:text-yellow duration-300 text-white px-10 tracking-widest cursor-pointer">
+                        <div className="title  text-base font-bold hover:text-yellow duration-300 text-white px-6 tracking-widest cursor-pointer">
                           SPEAKERS
                         </div>
                       </a>
                       <a href="#sponsors">
-                        <div className=" title text-base font-bold hover:text-yellow duration-300 text-white px-10 tracking-widest cursor-pointer">
+                        <div className=" title text-base font-bold hover:text-yellow duration-300 text-white px-6 tracking-widest cursor-pointer">
                           SPONSORS
                         </div>
                       </a>
                       <a href="#contact-us">
-                        <div className="title  text-base font-bold hover:text-yellow duration-300 text-white px-10 tracking-widest cursor-pointer">
+                        <div className="title  text-base font-bold hover:text-yellow duration-300 text-white px-6 tracking-widest cursor-pointer">
                           CONTACT US
                         </div>
                       </a>
@@ -380,7 +381,7 @@ function Home() {
                     </div>
                   </div>
                 </div>
-                <div className="">
+                <div id="form" className="">
                   <div className=" grid grid-cols-12 md:grid-col-full sm:grid-col-full smmd:grid-col-full gap-10">
                     <div className=" col-span-6 md:mx-4 sm:mx-4  sm:hidden smmd:hidden md:hidden  smmd:mx-4 md:col-span-full sm:col-span-full smmd:col-span-full bg-[#033c89f2]  md:p-4 p-6 sm:p-4 smmd:p-4 border-yellow-header">
                       <div className=" text-left text-white tracking-wide text-[30px] md:text-[24px] sm:text-[24px] smmd:text-[24px] leading-[38px]  font-semibold ">
@@ -392,7 +393,7 @@ function Home() {
                       </div>
 
                       <div>
-                        <form className=" pt-4">
+                        <form  className=" pt-4">
                           <div className=" grid grid-cols-12 gap-4">
                             <div className=" col-span-6">
                               <input name="name" onChange={(e) => handleChange(e)} type="text" className=" w-full p-2 text-[#4f4f4f] placeholder:text-[#4f4f4f]" placeholder="* Name " />
@@ -594,9 +595,8 @@ function Home() {
                           *fee applicable
                         </div>
                         <a
-                          href="https://cam.mycii.in/OR/OnlineRegistrationLogin.html?EventId=E000062816"
-                          target="_blank"
-                        >
+                        href="#form"
+                      >
                           <div className="py-2 my-2 px-10 sm:text-h4 smmd:text-h4 mx-auto text-h2 shadow hover:text-primary  bg-yellow hover:bg-yellow cursor-pointer duration-300 rounded-lg font-semibold title tracking-wider text-white">
                             Register now!
                           </div>
@@ -756,8 +756,7 @@ function Home() {
                 <div className=" grid grid-cols-12  smmd:grid-cols-12 sm:grid-cols-full gap-2">
                   <div className=" col-span-8 sm:col-span-full smmd:col-span-full md:col-span-full">
                     <h4 className=" text-white text-h2  px-2 sm:text-h5 smmd:text-h5 text-left">
-                      To Enhance Your Knowledge on “Artificial Intelligence &
-                      Educational Technology for Transforming Higher Education”
+                    It's time to enrich your knowledge with the 7th edition of CCI's National Higher Education Conclave 
                     </h4>
                     {/* <h4 className=" text-white text-h4 text-left">
                   Artificial Intelligence & Educational Technology for
@@ -792,11 +791,10 @@ function Home() {
                         *fee applicable
                       </div>
                       <a
-                        href="https://cam.mycii.in/OR/OnlineRegistrationLogin.html?EventId=E000062816"
-                        target="_blank"
+                        href="#form"
                       >
                         <div className="py-2 my-2 sm:text-h5 smmd:text-h5 px-10 sm:text-h4 smmd:text-h4 mx-auto text-h2 shadow hover:text-primary  bg-yellow hover:bg-yellow cursor-pointer duration-300 rounded-lg font-semibold title tracking-wider text-white">
-                          Reserve Your Spot
+                        Grab Your Slot
                         </div>
                       </a>
                     </div>
@@ -882,13 +880,12 @@ function Home() {
                   <div></div>
                 </div>
                 <div className=" col-span-4 sm:col-span-full smmd:col-span-full md:col-span-full h-full relative">
-                  <div className="mt-4 absolute sm:relative smmd:relative md:relative bottom-0 w-full">
-                    <div className=" text-primary  text-sm sm:pt-4 smmd:pt-4 text-left">
+                  <div className="mt-4 sm:mt-0 smmd:mt-0 md:mt-0 absolute sm:relative smmd:relative md:relative bottom-0 w-full">
+                    <div className=" text-primary  text-sm text-left">
                       *fee applicable
                     </div>
                     <a
-                      href="https://cam.mycii.in/OR/OnlineRegistrationLogin.html?EventId=E000062816"
-                      target="_blank"
+                      href="#form"
                     >
                       <div className="py-2 my-2 sm:text-h5px-10 sm:text-h4  mx-auto text-h4 shadow hover:text-primary  bg-primary hover:bg-secondary cursor-pointer duration-300 rounded-lg font-semibold title tracking-wider text-white">
                         Reserve Your Spot

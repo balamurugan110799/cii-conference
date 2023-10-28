@@ -10,6 +10,7 @@ import PageNotFound from './Layout/PageNotFound';
 import ThankYou from './Layout/ThankYou';
 
 function App() {
+  let data = sessionStorage.getItem("status");
   return (
     <div className="App">
 
@@ -17,7 +18,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/nhec" element={<Home />} />
-          <Route path="/thank-you" element={<ThankYou />} />
+           <Route path="/thank-you" element={<ThankYou />} /> 
           <Route path='*'  element={<PageNotFound/>}/>
 
         </Routes>

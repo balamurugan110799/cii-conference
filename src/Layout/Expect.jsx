@@ -3,6 +3,7 @@ import conference from "../Components/Asset/Image/Home/img.png";
 import { FaLocationArrow } from "react-icons/fa6";
 import { BsKey } from "react-icons/bs";
 import { RiUserStarLine, RiBaseStationLine, RiLightbulbFlashLine, RiSwapBoxLine, RiCpuLine } from "react-icons/ri";
+import { HiChevronDoubleRight } from "react-icons/hi";
 import CII from "../Components/Asset/Image/Home/cii.png"
 import {  } from "react-icons/bi";
 import vid from "../Components/Asset/Image/video/VID.mp4"
@@ -82,37 +83,48 @@ export default function Expect() {
             <div className=" relative h-full sm:h-full smmd:h-full md:h-full md:w-full">
               <img src={conference} className=" h-full object-cover sm:h-full smmd:h-full md:w-full" />
               <div className=" absolute top-0 p-10 h-full w-full">
-                <div className=" sm:p-4 smmd:p-4 p-10 border-2 border-white h-full w-full">
+                <div className=" sm:p-4 smmd:p-4 p-6 border-2 border-white h-full w-full">
                   <div className=" text-left font-semibold sm:pb-2 smmd:pb-2   sm:text-h3 smmd:text-h3 text-h2 tracking-wider text-primary">
                     Who Should Attend
                   </div>
 
-                  <div className=" py-6 sm:px-6 sm:pt-0 smmd:pt-0 smmd:px-6 sm:pb-0 smmd:pb-0  px-10">
+                  <div className=" py-6 sm:px-6 sm:pt-0 smmd:pt-0 smmd:px-6 sm:pb-0 smmd:pb-0  px-4">
                     <div className="pb-2 flex">
+                      <HiChevronDoubleRight className=" text-white mt-1.5  sm:mt-1 smmd:mt-1 "/>
                       <div className="text-h4 px-2 sm:text-base text-left smmd:text-base text-white">
-                      Chairmen & Managing Trustees
+                      Chairmen 
+                      </div>
+                    </div>
+                    <div className="pb-2 flex">
+                      <HiChevronDoubleRight className=" text-white mt-1.5 sm:mt-1 smmd:mt-1  "/>
+                      <div className="text-h4 px-2 sm:text-base text-left smmd:text-base text-white">
+                      Managing Trustees
                       </div>
                     </div>
 
                     <div className="pb-2 flex">
+                    <HiChevronDoubleRight className=" text-white mt-1.5 sm:mt-1 smmd:mt-1 "/>
                       <div className="text-h4 px-2 sm:text-base  text-left smmd:text-base text-white">
                         Academicians
                       </div>
                     </div>
 
                     <div className="pb-2 flex">
+                    <HiChevronDoubleRight className=" text-white mt-1.5 sm:mt-1 smmd:mt-1  "/>
                       <div className="text-h4 px-2 sm:text-base  text-left smmd:text-base text-white">
                         Industrialists
                       </div>
                     </div>
 
                     <div className="pb-2 flex">
+                    <HiChevronDoubleRight className=" text-white mt-1.5 sm:mt-1 smmd:mt-1  "/>
                       <div className="text-h4 px-2 sm:text-base  text-left smmd:text-base text-white">
                         Technologists
                       </div>
                     </div>
 
                     <div className="pb-2 flex">
+                    <HiChevronDoubleRight className=" text-white mt-1.5 sm:mt-1 smmd:mt-1 "/>
                       <div className="text-h4 px-2 sm:text-base  text-left smmd:text-base text-white">
                       EdTech  Companies
                       </div>

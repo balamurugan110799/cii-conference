@@ -17,7 +17,7 @@ export default function ThankYou() {
             </div>
             <div className=' bg-white px-6 sm:pb-10 smmd:pb-10'>
               <div className="py-16 pb-0">
-                <div className=" text-yellow sm:text-h5  smmd:text-h5 sm:pb-4 smmd:pb-4  text-h1 font-semibold">CONTACT US</div>
+                {/* <div className=" text-yellow sm:text-h5  smmd:text-h5 sm:pb-4 smmd:pb-4  text-h1 font-semibold">CONTACT US</div> */}
                 <div className="  py-16 pt-6 sm:py-0 md:px-4">
 
                   <div className=" container mx-auto sm:px-4 smmd:px-4">
@@ -27,7 +27,8 @@ export default function ThankYou() {
                     >
                       <div className=" col-span-12 sm:col-span-full md:col-span-full smmd:col-span-full">
                         <h3 className=" text-h3 sm:text-h5 smmd:text-h5 text-primary font-semibold text-left">
-                        Thank you for your interest in our conclave.
+                        We appreciate your interest in our conclave.
+
                         </h3>
                         <p className=" text-h5 text-secondary sm:text-base smmd:text-base text-left pt-1">
                         Our conclave coordinators are ready to assist you with the registration process.
