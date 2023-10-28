@@ -8,7 +8,7 @@ import Slider from "./Slider";
 function Footer() {
   return (
     <div className="bg-[#e6e6e6] py-16 pb-0">
-       <div className=" text-yellow sm:text-h5  smmd:text-h5 sm:pb-4 smmd:pb-4  text-h1 font-semibold">CONTACT US</div>
+       {/* <div className=" text-yellow sm:text-h5  smmd:text-h5 sm:pb-4 smmd:pb-4  text-h1 font-semibold">CONTACT US</div>
       <div className="  py-16 sm:py-0 md:px-4">
        
         <div className=" container mx-auto sm:px-4 smmd:px-4">
@@ -79,7 +79,7 @@ function Footer() {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }

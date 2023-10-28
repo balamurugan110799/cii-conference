@@ -24,89 +24,76 @@ export default function Session() {
   const [Inaugural, setInaugural] = useState([
     {
       id: 1,
-      time: "9.30 AM - 9.35 AM",
+      time: "9.30 - 9.35",
       content: "Welcome Address",
       speaker:
         "Dr K Senthil Ganesh, Chairman, CII Coimbatore Zone & CEO, Transform Tech(I) Pvt Ltd",
     },
     {
       id: 2,
-      time: "9.35 AM - 9.40 AM",
+      time: "9.35 - 9.40",
       content: "Theme Address",
       speaker:
         "Dr R Nandini, Co-Chairperson, National Higher Education Conclave 2023 & Founder Trustee, GRG Trust",
     },
     {
       id: 3,
-      time: "9.40 AM - 9.50 AM",
+      time: "9.40 - 9.55 ",
       content: "Address",
       speaker:
-        "Mr Shankar Vanavarayar, Chairman, CII Tamil Nadu State Council & Executive Director, ABT Industries Ltd",
+        "Mr. Abhilash Misra, CEO, NSE Academy",
     },
     {
       id: 4,
-      time: "9.50 AM - 10.05 AM",
+      time: "9.55 - 10.10",
       content: "Special Address",
       speaker:
-        "Ms Swati Salgaocar*, Deputy Chairperson, CII Western Region & 	President, V M Salgaocar and Brothers Pvt Ltd",
+        "Mr. Hari Subramanian, Managing Director, Colruyt India",
     },
     {
       id: 5,
-      time: "10.05 AM - 10.20 AM",
-      content: "Special Address",
-      speaker: "Mr Abilash Misra, CEO, NSE Academy",
+      time: "10.10 - 10.15",
+      content: "Vote of Thanks",
+      speaker: "Ms. S. Malarvizhi, Co-Chairperson, National Higher Education Conclave 2023 & Managing Trustee, Sri Krishna Institutions",
     },
     {
       id: 6,
-      time: "10.20 AM - 10.35 AM ",
-      content: "	Keynote Address",
-      speaker: "Ms Roshini Nadar Malhotra*, Chairperson, HCL Tech",
-    },
-    {
-      id: 7,
-      time: "10.35 AM - 10.40 AM",
-      content: "Vote of Thanks ",
-      speaker:
-        "Ms S Malarvizhi, Co-Chairperson, National Higher Education Conclave 2023 & Managing Trustee, Sri Krishna Institutions",
-    },
-    {
-      id: 8,
-      time: "10.40 AM - 11.10 AM",
+      time: "10.15 - 10.45 ",
       content: "Networking Break",
-      speaker:
-        "",
+      speaker: "",
     },
+   
   ]);
 
   const [EdTech, setEdTech] = useState([
     {
-      id: 0,
-      time: "11.10 AM - 11.15 AM",
-      content: "Opening Remarks by Panel Chairman ",
-      speaker: "",
+      id: 1,
+      time: "10.45 - 10.50",
+      content: "	Opening Remarks by Panel Chairman",
+      speaker: "Mr. Chocko Valliappa, Co-Convenor – Education Panel CII Tamil Nadu & Vice Chairman and Trustee, Sona Group Institutions",
     },
     {
-      id: 0,
-      time: "11.15 AM - 11.35 AM",
+      id: 2,
+      time: "10.50 - 11.10",
       content: "Global Perspective on AI in Higher Education ",
       speaker: "Mr Abhilash Misra, CEO, NSE Academy",
     },
     {
-      id: 0,
-      time: "11.35 AM - 11.55 AM",
+      id: 3,
+      time: "11.10 - 11.30",
       content: "EdTech Ecosystem in India ",
       speaker:
         "Mr Dulles Krishnan, Managing Director - Enterprise Coursera India",
     },
     {
-      id: 0,
-      time: "11.55 AM - 12.10 PM",
+      id: 4,
+      time: "11.30 - 11.40",
       content: "Interaction and Q&A ",
       speaker: "",
     },
     {
-      id: 0,
-      time: "12.10 PM - 12.15 PM",
+      id: 5,
+      time: "11.40 - 11.45",
       content: "Session changeover ",
       speaker: "",
     },
@@ -114,39 +101,39 @@ export default function Session() {
 
   const [Learning, setLearning] = useState([
     {
-      id: 0,
-      time: "12.15 PM - 12.20 PM",
+      id: 1,
+      time: "12.45  - 11.50",
       content: "Opening Remarks by Session Chairman",
-      speaker: "",
+      speaker: "Dr. Wg Cdr A Balachandran, Additional Director, Amrita Vishwa Vidaypeetham",
     },
     {
-      id: 0,
-      time: "12.20 PM - 12.40 PM",
+      id: 2,
+      time: "11.50 - 12.10",
       content: "AI-Enhanced Curriculum Development",
       speaker: "Ms Vasanthi Srinivasan (ONLINE), Professor, IIM Bangalore.",
     },
     {
-      id: 0,
-      time: "12.40 PM - 13.00 PM",
+      id: 3,
+      time: "12.10 - 12.30",
       content: "AI-Driven Assessment and Feedback",
-      speaker: "Speaker (Name awaited), AMCAT SHL",
+      speaker: "Mr. Saurabh Nagarkar, AVP – Campus Solutions SHL India Pvt. Ltd.",
     },
     {
-      id: 0,
-      time: "13.00 PM - 13.20 PM",
+      id: 4,
+      time: "12.30 - 12.50",
       content: "Interactive Learning with EdTech",
       speaker:
         "Dr Christopher Abraham*, CEO & Head - Dubai Campus, S P Jain School  of Global Management",
     },
     {
       id: 0,
-      time: "13.20 PM - 13.30 PM",
-      content: "Interactive Learning with EdTech",
+      time: "12.50 - 13.05",
+      content: "Interaction & close",
       speaker: "",
     },
     {
       id: 0,
-      time: "13.30 PM - 14.30 PM",
+      time: "13.05 - 14.00",
       content: "Lunch Break",
       speaker: "",
     },
@@ -155,43 +142,41 @@ export default function Session() {
   const [StudentEngagement, setStudentEngagement] = useState([
     {
       id: 0,
-      time: "14.30 PM - 14.35 PM",
+      time: "14.00 - 14.05",
       content: "Opening Remarks by Panel Chairman",
-      speaker: "",
+      speaker: "Dr. K. Sundararaman, Chief Executive Officer, Sri Krishna Institutions",
     },
     {
       id: 0,
-      time: "14.35 PM - 14.50 PM",
-      content: "Remarks by Lead Speaker",
+      time: "14.05 - 14.25",
+      content: "Presentation by",
       speaker:
-        "Ms Dhanniya Venkatasalapathy*, Executive Director - Cloud Solutions Microsoft India",
+        "Mr. Rahul V Rodriguez, Vice President, Woxsen University",
     },
     {
       id: 0,
-      time: "14.50 PM - 15.20 PM",
+      time: "14.25 - 14.45",
       content: <div>
 
-        <div>Eminent Panelists</div>
+        <div>Presentation by</div>
 
       </div>,
       speaker:<div>
         
-        <div> Dr Gururaj H Kidiyoor, Director, NITTE Institution</div>
-        <div> Ms Maya Sreekumar*, GenC Program Head (India), Cognizant</div>
-        <div> Dr Suresh Ramanatha*, Dean & Principal, Great Lakes Institute of Management</div>
-        <div> Dr S Senthilnathan*, Professor - Educational Technology, Bharathidasan University</div>
+        <div>Mr. Ravin Nair, Chief Operating Officer, QS 1-GAUGE
+</div>
       </div>,
     },
     {
       id: 0,
-      time: "15.20 PM - 15.35 PM",
+      time: "14.45 - 14.55",
       content: "Interaction & close",
       speaker: "",
     },
     {
       id: 0,
-      time: "15.35 PM - 15.55 PM",
-      content: "Networking Break",
+      time: "14.55 - 15.00",
+      content: "Session changeover",
       speaker: "",
     },
   ]);
@@ -199,32 +184,45 @@ export default function Session() {
   const [AcademicAdministration, setAcademicAdministration] = useState([
     {
       id: 0,
-      time: "15.55 PM - 16.00 PM",
+      time: "15.00 - 15.05",
       content: "Opening Remarks by Session Chairman",
-      speaker: "",
+      speaker: "Dr. T. Bina, Director, Happy Valley Bussiness School",
     },
     {
       id: 0,
-      time: "16.00 PM - 16.20 PM",
-      content: "Presentation by",
-      speaker: "Mr Rahul V Rodriguez, Vice President, Woxsen University",
+      time: "15.05 - 15.20",
+      content: "Remarks by Lead Speaker",
+      speaker: "Mr. Nagesh Subrahmanyam, Partner Solution Architect, Amazon Web Services",
     },
     {
       id: 0,
-      time: "16.20 PM - 16.40 PM",
-      content: "Presentation by",
-      speaker: "Ellucian",
+      time: "15.20 - 15.50",
+      content: "Eminent Panelists:",
+      speaker: <div>
+        <div>
+        Dr. Gururaj H Kidiyoor, Director, NITTE Institution
+        </div>
+        <div>
+        Mr. Sakthivel Rajasekar, Director HR & GenC Program, Cognizant
+        </div>
+        <div>
+        Dr. Suresh Ramanatha, Dean & Principal, Great Lakes Institute of Management
+        </div>
+        <div>
+        Dr. S. Senthilnathan, Professor - Educational Technology, Bharathidasan University
+        </div>
+      </div>,
     },
     {
       id: 0,
-      time: "16.40 PM - 16.50 PM",
+      time: "15.50 - 16.05",
       content: "Interaction and closer",
       speaker: "",
     },
     {
       id: 0,
-      time: "16.50 PM - 16.55 PM",
-      content: "Session changeover",
+      time: "16.05 - 16.25",
+      content: "Networking Break",
       speaker: "",
     },
   ]);
@@ -232,41 +230,38 @@ export default function Session() {
   const [FutureWork, setFutureWork] = useState([
     {
       id: 0,
-      time: "16.55 PM - 17.00 PM ",
+      time: "16.25 - 16.30 ",
       content: "Opening Remarks by Panel Chairman",
       speaker: "Prof S Balasubramanian, Director, GRG Centre for Advancing Studies",
     },
     {
       id: 0,
-      time: "17.00 PM - 17.30 PM ",
+      time: "16.30 - 17.00",
       content: "Eminent Panellists",
       speaker: <div>
         <div>
-        Mr Sang Won Yoon*, Professor, Binghamton University, USA
+        Dr. K. Senthil Ganesh, CEO, Transform Tech(I) Pvt. Ltd.
         </div>
         <div>
-        Dr K Senthil Ganesh, CEO, Transform Tech(I) Pvt Ltd
+        Ms. S. Hemamalini, Director - Planning and Operations, Numentica Technologies Ltd
         </div>
         <div>
-        Mr Samuel Jacob*, Global HR Suite - Program Management, Stellantis
+        Mr. V. Venkataraghulan, Co-Founder, Kalvium
         </div>
         <div>
-        Ms Hemamalini S, Director - Planning and Operations, Numentica Technologies Ltd
-        </div>
-        <div>
-        Mr Santhosh Thangavelu
+        Dr. B. Somasundaram, Head - Digital Transformation, Elgi Equipments Ltd.
         </div>
       </div>,
     },
     {
       id: 0,
-      time: "17.30 PM - 17.40 PM",
+      time: "17.00 - 17.15",
       content: "Interaction and Q&A",
       speaker: "",
     },
     {
       id: 0,
-      time: "17.40 PM- 17.50 PM",
+      time: "17.15 - 17.30",
       content: "Summing up & Conference close",
       speaker: "",
     },
