@@ -701,7 +701,7 @@ function Home() {
 
           <section id="speaker">
             <div className="  py-16  sm:pt-0 smmd:pt-0 pb-0">
-              <h1 className=" font-semibold text-yellow text-h1 sm:text-h3  smmd:text-h3 pb-4 sm:pb-10 smmd:pb-10">
+              <h1 className=" font-semibold text-yellow text-h1 sm:text-h3  smmd:text-h3 pb-4 sm:pb-10 sm:pt-10 smmd:pt-10 smmd:pb-10">
                 SPEAKERS
               </h1>
               <div className="py-10 sm:py-0 smmd:py-0 sm:px-4 smmd:px-4">
@@ -740,7 +740,7 @@ function Home() {
           </section>
 
           <section className=" bg-yellow sm:px-4 smmd:px-4">
-            <div className="py-16">
+            <div className="">
               <div className=" pt-6">
                 <h1 className=" font-semibold text-white  sm:text-h3 smmd:text-h3 text-h1 pb-10">
                   PREVIOUS EDITIONS
