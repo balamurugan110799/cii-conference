@@ -132,8 +132,6 @@ function Home() {
     }
     e.preventDefault();
     setSubmitDisable(true)
-    console.log(data)
-    console.log(errors)
   }
 
   const [faq, setFAQ] = useState([
@@ -742,7 +740,7 @@ function Home() {
           <section className=" bg-yellow sm:px-4 smmd:px-4">
             <div className="">
               <div className=" pt-6">
-                <h1 className=" font-semibold text-white  sm:text-h3 smmd:text-h3 text-h1 pb-10">
+                <h1 className=" font-semibold text-white  sm:text-h3 smmd:text-h3 text-h1 pb-10 ">
                   PREVIOUS EDITIONS
                 </h1>
                 <PreviousEditions />
