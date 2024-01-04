@@ -1,8 +1,5 @@
 import React, { useEffect, useState } from "react";
-import AI from "../Components/Asset/Image/Home/AI.png";
-import AIG from "../Components/Asset/Image/Home/AI_BRAN.png";
 import AI_BRAIN from "../Components/Asset/Image/Home/4402944_18296.jpg";
-import AI_BRAINMobile from "../Components/Asset/Image/Home/mobile-view.png";
 
 import AI_TECH from "../Components/Asset/Image/Home/4546131_3922.jpg";
 import { IoIosArrowDown } from "react-icons/io";

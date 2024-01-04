@@ -3,7 +3,6 @@ import CIIA from "../Components/Asset/Image/Home/download.jpg";
 import { ImMobile } from "react-icons/im";
 import { BsMailbox2 } from "react-icons/bs";
 import { RiMailFill } from "react-icons/ri";
-import Slider from "./Slider";
 
 function Footer() {
   return (

@@ -29,12 +29,7 @@
     align-items: center;
 }
 
-.backgroundimage{
-    background: url(../Asset/Image/Home/AI.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-size: 100%; 
-}
+
 
 .shadow{
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
@@ -79,12 +74,12 @@
     animation: pulse 2s infinite;
     float: left;
   }
-  .backgrond{
+  /* .backgrond{
     background: url(../Asset/Image/Home/AIG.png);
     background-repeat: no-repeat;
     background-size: auto;
     width: 100%;
-  }
+  } */
 
   
   .pulse-animation:hover {
